@@ -1,14 +1,14 @@
 export default function Section_2() {
   return (
     <section className="flex h-[660px] w-full flex-col px-[16px]">
-      <h2 className="text-28b-emphasis-title text-on-bg-a-9 mt-[50px]">
+      <h2 className="text-mobile-28b-emphasis-title text-on-bg-a-9 mt-[50px]">
         AI 견적
       </h2>
-      <h2 className="text-28b-emphasis-title bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent">
+      <h2 className="text-mobile-28b-emphasis-title bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent">
         1:1 상담 분석, <span className="text-on-bg-a-1">빠른</span> 견적{" "}
         <span className="text-on-bg-a-1"> 생성</span>
       </h2>
-      <p className="text-16r-body-light text-on-bg-a-3">
+      <p className="text-mobile-16r-body-light text-on-bg-a-3">
         24시간 고객 상담, 맞춤 견적 자동처리로{" "}
         <br className="block sm:hidden" />
         매출 향상을 만드는 에이고

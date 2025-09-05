@@ -9,44 +9,75 @@
 }
 
 /* Custom Typography Classes */
-.text-28b-emphasis-title {
+.text-mobile-28b-emphasis-title {
   font-size: var(--font-size-28b-emphasis-title);
   font-weight: var(--font-weight-28b-emphasis-title);
 }
 
-.text-24sb-title1 {
+.text-mobile-24sb-title1 {
   font-size: var(--font-size-24sb-title1);
   font-weight: var(--font-weight-24sb-title1);
 }
 
-.text-20sb-title2 {
+.text-mobile-20sb-title2 {
   font-size: var(--font-size-20sb-title2);
   font-weight: var(--font-weight-20sb-title2);
 }
 
-.text-16sb-body {
+.text-mobile-16sb-body {
   font-size: var(--font-size-16sb-body);
   font-weight: var(--font-weight-16sb-body);
 }
 
-.text-16r-body-light {
+.text-mobile-16r-body-light {
   font-size: var(--font-size-16r-body-light);
   font-weight: var(--font-weight-16r-body-light);
 }
 
-.text-15m-btn {
+.text-mobile-15m-btn {
   font-size: var(--font-size-15m-btn);
   font-weight: var(--font-weight-15m-btn);
 }
 
-.text-14m-subtext {
+.text-mobile-14m-subtext {
   font-size: var(--font-size-14m-subtext);
   font-weight: var(--font-weight-14m-subtext);
 }
 
-.text-12r-tag {
+.text-mobile-12r-tag {
   font-size: var(--font-size-12r-tag);
   font-weight: var(--font-weight-12r-tag);
+}
+
+/* PC Typography Classes */
+.text-pc-50sb-hero {
+  font-size: var(--font-size-50sb-hero);
+  font-weight: var(--font-weight-50sb-hero);
+}
+
+.text-pc-32b-emphasis-title {
+  font-size: var(--font-size-32b-emphasis-title);
+  font-weight: var(--font-weight-32b-emphasis-title);
+}
+
+.text-pc-26sb-title {
+  font-size: var(--font-size-26sb-title);
+  font-weight: var(--font-weight-26sb-title);
+}
+
+.text-pc-20m-btn {
+  font-size: var(--font-size-20m-btn);
+  font-weight: var(--font-weight-20m-btn);
+}
+
+.text-pc-20sb-body {
+  font-size: var(--font-size-20sb-body);
+  font-weight: var(--font-weight-20sb-body);
+}
+
+.text-pc-16r-subtext {
+  font-size: var(--font-size-16r-subtext);
+  font-weight: var(--font-weight-16r-subtext);
 }
 
 @theme {
@@ -115,6 +146,15 @@
   --color-on-surface-b-7: #D4F2FA;
   --color-on-surface-b-8: #ED2424;
 
+  /* Surface C - Tertiary Surface Colors */
+  --color-surface-c: #FFFFFF;
+  --color-on-surface-c-1: #000000;
+  --color-on-surface-c-2: #E0E4FF;
+  --color-on-surface-c-3: #FFFFFF;
+  --color-on-surface-c-4: #666666;
+  --color-on-surface-c-5: #B3B3B3;
+  --color-on-surface-c-6: #3D8CE8;
+
   /* Tag Colors */
   --color-tag-1: #E5ECF2;
   --color-on-tag-1: #FFFFFF;
@@ -180,6 +220,37 @@
   --line-height-12r-tag: 16px;
   --letter-spacing-12r-tag: -0.02%;
   --font-weight-12r-tag: 400;
+  
+  /* PC Typography Variables */
+  --font-size-50sb-hero: 50px;
+  --line-height-50sb-hero: 56px;
+  --letter-spacing-50sb-hero: -1.6%;
+  --font-weight-50sb-hero: 600;
+  
+  --font-size-32b-emphasis-title: 32px;
+  --line-height-32b-emphasis-title: 36px;
+  --letter-spacing-32b-emphasis-title: -3%;
+  --font-weight-32b-emphasis-title: bold;
+  
+  --font-size-26sb-title: 26px;
+  --line-height-26sb-title: 32px;
+  --letter-spacing-26sb-title: -4.5%;
+  --font-weight-26sb-title: 600;
+  
+  --font-size-20m-btn: 20px;
+  --line-height-20m-btn: 24px;
+  --letter-spacing-20m-btn: -2%;
+  --font-weight-20m-btn: 500;
+  
+  --font-size-20sb-body: 20px;
+  --line-height-20sb-body: 24px;
+  --letter-spacing-20sb-body: -2%;
+  --font-weight-20sb-body: 600;
+  
+  --font-size-16r-subtext: 16px;
+  --line-height-16r-subtext: 24px;
+  --letter-spacing-16r-subtext: -2%;
+  --font-weight-16r-subtext: 500;
 }
 
 /* Bubble Animation Keyframes */

@@ -52,7 +52,7 @@ export default function Section_1() {
   return (
     <section className="relative flex h-[675px] w-full flex-col items-center overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE]">
       <h1
-        className={`text-on-bg-e-1 text-28b-emphasis-title mt-[50px] transition-all duration-2000 ease-out ${
+        className={`text-on-bg-e-1 text-mobile-28b-emphasis-title mt-[50px] transition-all duration-2000 ease-out ${
           animationStage >= 1
             ? "translate-y-0 opacity-100"
             : "translate-y-8 opacity-0"
@@ -61,7 +61,7 @@ export default function Section_1() {
         영업시간은 줄고, <br className="block sm:hidden" /> 매출은 느는 마법
       </h1>
       <p
-        className={`text-on-bg-e-2 text-16r-body-light mt-[24px] transition-all duration-2000 ease-out ${
+        className={`text-on-bg-e-2 text-mobile-16r-body-light mt-[24px] transition-all duration-2000 ease-out ${
           animationStage >= 2
             ? "translate-y-0 opacity-100"
             : "translate-y-8 opacity-0"
@@ -70,7 +70,7 @@ export default function Section_1() {
         대표님, 영업은 AIGO한테 맡기고 퇴근하세요!
       </p>
       <p
-        className={`text-on-bg-e-2 text-16r-body-light mt-[44px] transition-all duration-2000 ease-out ${
+        className={`text-on-bg-e-2 text-mobile-16r-body-light mt-[44px] transition-all duration-2000 ease-out ${
           animationStage >= 3
             ? "translate-y-0 opacity-100"
             : "translate-y-8 opacity-0"
