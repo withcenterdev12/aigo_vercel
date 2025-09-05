@@ -198,3 +198,35 @@
 .bubble-float-7 { animation: floatLeftRight 5.5s ease-in-out infinite alternate 2.5s; }
 .bubble-float-8 { animation: floatLeftRight 6.5s ease-in-out infinite alternate 1.2s; }
 .bubble-float-9 { animation: floatLeftRight 3.8s ease-in-out infinite alternate 3s; }
+
+/* Custom Slider Styles */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #60A5FA;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #60A5FA;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #60A5FA;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
