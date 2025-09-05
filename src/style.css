@@ -9,73 +9,74 @@
 }
 
 /* Custom Typography Classes */
-.text-mobile-28b-emphasis-title {
+@utility text-mobile-28b-emphasis-title {
   font-size: var(--font-size-28b-emphasis-title);
   font-weight: var(--font-weight-28b-emphasis-title);
+  /* letter-spacing: var(--letter-spacing-28b-emphasis-title);  // make sure this token is a length, not a % */
 }
 
-.text-mobile-24sb-title1 {
+@utility text-mobile-24sb-title1 {
   font-size: var(--font-size-24sb-title1);
   font-weight: var(--font-weight-24sb-title1);
 }
 
-.text-mobile-20sb-title2 {
+@utility text-mobile-20sb-title2 {
   font-size: var(--font-size-20sb-title2);
   font-weight: var(--font-weight-20sb-title2);
 }
 
-.text-mobile-16sb-body {
+@utility text-mobile-16sb-body {
   font-size: var(--font-size-16sb-body);
   font-weight: var(--font-weight-16sb-body);
 }
 
-.text-mobile-16r-body-light {
+@utility text-mobile-16r-body-light {
   font-size: var(--font-size-16r-body-light);
   font-weight: var(--font-weight-16r-body-light);
 }
 
-.text-mobile-15m-btn {
+@utility text-mobile-15m-btn {
   font-size: var(--font-size-15m-btn);
   font-weight: var(--font-weight-15m-btn);
 }
 
-.text-mobile-14m-subtext {
+@utility text-mobile-14m-subtext {
   font-size: var(--font-size-14m-subtext);
   font-weight: var(--font-weight-14m-subtext);
 }
 
-.text-mobile-12r-tag {
+@utility text-mobile-12r-tag {
   font-size: var(--font-size-12r-tag);
   font-weight: var(--font-weight-12r-tag);
 }
 
-/* PC Typography Classes */
-.text-pc-50sb-hero {
+/* PC */
+@utility text-pc-50sb-hero {
   font-size: var(--font-size-50sb-hero);
   font-weight: var(--font-weight-50sb-hero);
 }
 
-.text-pc-32b-emphasis-title {
+@utility text-pc-32b-emphasis-title {
   font-size: var(--font-size-32b-emphasis-title);
   font-weight: var(--font-weight-32b-emphasis-title);
 }
 
-.text-pc-26sb-title {
+@utility text-pc-26sb-title {
   font-size: var(--font-size-26sb-title);
   font-weight: var(--font-weight-26sb-title);
 }
 
-.text-pc-20m-btn {
+@utility text-pc-20m-btn {
   font-size: var(--font-size-20m-btn);
   font-weight: var(--font-weight-20m-btn);
 }
 
-.text-pc-20sb-body {
+@utility text-pc-20sb-body {
   font-size: var(--font-size-20sb-body);
   font-weight: var(--font-weight-20sb-body);
 }
 
-.text-pc-16r-subtext {
+@utility text-pc-16r-subtext {
   font-size: var(--font-size-16r-subtext);
   font-weight: var(--font-weight-16r-subtext);
 }
