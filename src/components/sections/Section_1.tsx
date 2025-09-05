@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
 import Button from "../common/Button";
+import { useEffect, useState } from "react";
+import SlotCounter from "react-slot-counter";
 
 export default function Section_1() {
   const [animationStage, setAnimationStage] = useState(0);
   const [sliderValue, setSliderValue] = useState(12);
+  const [showCounter, setShowCounter] = useState(false);
 
   useEffect(() => {
     const stages = [1, 2, 3, 4, 5];
@@ -14,6 +16,7 @@ export default function Section_1() {
           // Start slider animation after all stages complete
           setTimeout(() => {
             animateSlider();
+            setShowCounter(true);
           }, 600);
         }
       }, index * 400);
@@ -23,7 +26,7 @@ export default function Section_1() {
   const animateSlider = () => {
     const startValue = 12;
     const endValue = 28;
-    const duration = 750;
+    const duration = 1000;
     const startTime = Date.now();
 
     const updateSlider = () => {
@@ -120,21 +123,46 @@ export default function Section_1() {
             }}
           />
         </div>
-        <div className="justify absolute top-[43%] -left-[31%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
+        <div className="absolute top-[43%] -left-[31%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
           <div className="flex items-center">
             <img
               src="/images/icon_ai_fill.svg"
-              className="h-[17.55px] w-[17.55px]"
+              className="mr-2 h-[17.55px] w-[17.55px]"
             />
             <p className="text-[10px] font-bold text-[#2A2B2B]">기본 공통</p>
           </div>
-          <p className="text-[10px] font-bold text-[#2A2B2B]">15,000,000</p>
+          <p className="text-[10px] font-bold text-[#2A2B2B]">
+            {showCounter ? (
+              <SlotCounter value="15,000,000" startValue={0} duration={0.75} />
+            ) : (
+              <span className="invisible">15,000,000</span>
+            )}
+          </p>
           <img
             src="/images/icon_chevron_down.svg"
             className="h-[17.55px] w-[17.55px]"
           />
         </div>
-        <div className="absolute top-[58%] left-[28%] z-20 h-[40px] w-[190px] rounded-[9px] bg-white shadow-md"></div>
+        <div className="absolute top-[58%] left-[28%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
+          <div className="flex items-center">
+            <img
+              src="/images/icon_user.svg"
+              className="mr-2 h-[17.55px] w-[17.55px]"
+            />
+            <p className="text-[10px] font-bold text-[#2A2B2B]">사용자 앱</p>
+          </div>
+          <p className="text-[10px] font-bold text-[#2A2B2B]">
+            {showCounter ? (
+              <SlotCounter value="10,000,000" startValue={0} duration={0.5} />
+            ) : (
+              <span className="invisible">10,000,000</span>
+            )}
+          </p>
+          <img
+            src="/images/icon_chevron_down.svg"
+            className="h-[17.55px] w-[17.55px]"
+          />
+        </div>
       </div>
     </section>
   );
