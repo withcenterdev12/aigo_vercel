@@ -1,6 +1,6 @@
 export default function Section_9() {
   return (
-    <section className="flex h-[680px] w-full flex-col px-[16px] py-[25px]">
+    <section className="mb-[25px] flex h-[680px] w-full flex-col px-[16px] py-[25px]">
       <div className="flex flex-col">
         <h2 className="text-mobile-28b-emphasis-title">
           <span className="text-on-bg-a-9">추천 대상</span>
@@ -56,18 +56,24 @@ export default function Section_9() {
             </p>
           </div>
           {/* 3 */}
-          <div className="border-line-1 flex h-[94px] w-full flex-col rounded-[12px] p-[12px]">
-            <div className="bg-on-surface-a-2 mb-2 flex h-[24px] w-[24px] items-center justify-center rounded-full">
-              <span className="text-on-surface-a-1 text-lg font-bold">3</span>
+          <div className="border-line-1 flex h-[104px] w-full flex-col rounded-[12px] border-1 p-[12px]">
+            <div className="bg-on-surface-b-1 mb-2 flex h-[24px] w-[24px] items-center justify-center rounded-full">
+              <span className="text-surface-b text-lg font-bold">3</span>
             </div>
-            둘 다 <br /> 사용하는 경우
+            <p>
+              <span className="font-semibold">둘 다 </span>
+              <br /> 사용하는 경우
+            </p>
           </div>
           {/* 4 */}
-          <div className="border-line-1 bg-surface-a flex h-[94px] w-full flex-col rounded-[12px] p-[12px]">
+          <div className="bg-surface-a flex h-[104px] w-full flex-col rounded-[12px] p-[12px]">
             <div className="bg-on-surface-a-2 mb-2 flex h-[24px] w-[24px] items-center justify-center rounded-full">
               <span className="text-on-surface-a-1 text-lg font-bold">4</span>
             </div>
-            맞춤 개발이 필요한 <br /> 기업
+            <p>
+              <span className="font-semibold">맞춤 개발이 필요한</span>
+              <br /> 기업
+            </p>
           </div>
         </div>
       </div>
