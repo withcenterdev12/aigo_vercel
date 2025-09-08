@@ -112,7 +112,7 @@ export default function Section_9() {
             </div>
           </div>
         </div>
-        <div className="mt-[80px] flex w-full flex-row justify-between px-[40px]">
+        <div className="mt-[80px] hidden w-full flex-row justify-between px-[40px] sm:flex">
           <p className="text-pc-26sb-title text-on-surface-a-7">
             다양한 상황에 <br /> 맞춰 사용하세요
           </p>
