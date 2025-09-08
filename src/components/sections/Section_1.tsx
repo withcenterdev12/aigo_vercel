@@ -104,7 +104,7 @@ export default function Section_1() {
               src="/images/icon_ai_fill.svg"
               className="mr-2 h-[17.55px] w-[17.55px]"
             />
-            <p className="text-pc-16r-subtext font-bold text-[#2A2B2B]">
+            <p className="text-pc-16r-subtext font-semibold text-[#2A2B2B]">
               기본 공통
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function Section_1() {
               src="/images/icon_user.svg"
               className="mr-2 h-[17.55px] w-[17.55px]"
             />
-            <p className="text-pc-16r-subtext font-bold text-[#2A2B2B]">
+            <p className="text-pc-16r-subtext font-semibold text-[#2A2B2B]">
               사용자 앱
             </p>
           </div>
@@ -142,7 +142,35 @@ export default function Section_1() {
             className="h-[17.55px] w-[17.55px]"
           />
         </div>
-        <div className="absolute top-[55%] -left-[11%] h-[127px] w-[356px] rounded-[9px] bg-white shadow-md"></div>
+        <div className="absolute top-[55%] -left-[11%] flex h-[127px] w-[356px] flex-col rounded-[9px] bg-white px-[14px] shadow-md">
+          <p className="mt-[13.5px] text-[16px] font-bold">
+            프로젝트 기간 설정{" "}
+            <span className="text-[10px] font-light">(주 단위)</span>
+          </p>
+          <p className="text-[10px] font-light">
+            견적기간을 늘릴 경우 할인된 금액으로 변경됩니다
+          </p>
+          <p className="mt-[20px] self-center text-[#1E83FF]">
+            {sliderValue}
+            <span className="font-semibold">주</span>
+          </p>
+          <input
+            type="range"
+            readOnly
+            disabled
+            min="12"
+            max="36"
+            value={sliderValue}
+            className="slider h-1 w-full cursor-pointer appearance-none rounded-lg bg-[#B5B5B5]"
+            style={{
+              background: `linear-gradient(to right, #81AFE9 0%, #81AFE9 ${((sliderValue - 12) / (36 - 12)) * 100}%, #B5B5B5 ${((sliderValue - 12) / (36 - 12)) * 100}%, #B5B5B5 100%)`,
+            }}
+          />
+          <div className="mt-[6px] flex w-full flex-row justify-between text-[7.8px] text-[#94949494]">
+            <p>12주</p>
+            <p>36주</p>
+          </div>
+        </div>
       </div>
       {/* Mobile View */}
       <div
@@ -179,6 +207,10 @@ export default function Section_1() {
               background: `linear-gradient(to right, #81AFE9 0%, #81AFE9 ${((sliderValue - 12) / (36 - 12)) * 100}%, #B5B5B5 ${((sliderValue - 12) / (36 - 12)) * 100}%, #B5B5B5 100%)`,
             }}
           />
+          <div className="mt-[8px] flex w-full flex-row justify-between text-[7.8px] text-[#94949494]">
+            <p>12주</p>
+            <p>36주</p>
+          </div>
         </div>
         <div className="absolute top-[43%] -left-[31%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
           <div className="flex items-center">

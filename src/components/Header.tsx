@@ -8,7 +8,9 @@ export default function Header() {
         <img src="/images/header_logo.png" className="h-[20px] w-[68px]" />
         <nav className="hidden flex-row gap-[32px] sm:flex">
           {navigationBarItems.map((item) => (
-            <p className="text-mobile-15m-btn text-on-bg-a-3">{item.label}</p>
+            <p className="text-mobile-15m-btn text-on-bg-a-3 hover:cursor-pointer">
+              {item.label}
+            </p>
           ))}
         </nav>
       </div>
