@@ -7,7 +7,7 @@ export default function Section_6() {
           이런 분들께 추천드립니다
         </span>
       </h2>
-      <div className="mt-[60px] grid grid-cols-2 gap-[52px] sm:gap-[80px]">
+      <div className="mt-[50px] grid gap-[52px] sm:grid-cols-2 sm:gap-[80px]">
         {/* Item 1 */}
         <div className="flex flex-col gap-[11px]">
           <span className="text-mobile-20sb-title2 sm:text-pc-26sb-title flex flex-row items-center bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent">
