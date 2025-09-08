@@ -6,6 +6,7 @@ import Section_4 from "./components/sections/Section_4";
 import Section_6 from "./components/sections/Section_6";
 import Section_7 from "./components/sections/Section_7";
 import Section_8 from "./components/sections/Section_8";
+import Section_9 from "./components/sections/Section_9";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Section_6 />
       <Section_7 />
       <Section_8 />
+      <Section_9 />
     </main>
   );
 }

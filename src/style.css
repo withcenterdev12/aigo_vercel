@@ -126,7 +126,9 @@
 
   /* Surface A - Primary Surface Colors */
   --color-surface-a: #F5F6FC;
-  --color-on-surface-a-1: #3D8CE8;
+  
+  /* --color-on-surface-a-1: #3D8CE8; */
+  --color-on-surface-a-1: #323CEF;
   --color-on-surface-a-2: #FFFFFF;
   --color-on-surface-a-3: #CCCCCC;
   --color-on-surface-a-4: #B3B3B3;
@@ -138,7 +140,8 @@
 
   /* Surface B - Secondary Surface Colors */
   --color-surface-b: #E5ECF2;
-  --color-on-surface-b-1: #3D8CE8;
+  /* --color-on-surface-b-1: #3D8CE8; */
+  --color-on-surface-b-1: #323CEF;
   --color-on-surface-b-2: #2A60B8;
   --color-on-surface-b-3: #B3B3B3;
   --color-on-surface-b-4: #666666;
