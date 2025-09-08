@@ -15,7 +15,7 @@ export default function Header() {
       <div className="flex flex-row gap-[12px]">
         <Button
           onClick={() => {}}
-          customStyle="text-on-btn-a-emphasis text-mobile-15m-btn border px-[10px] py-[6px] rounded-[8px]"
+          customStyle="text-on-btn-a-emphasis text-mobile-15m-btn border px-[10px] py-[6px] rounded-[8px] "
         >
           서비스 체험
         </Button>
