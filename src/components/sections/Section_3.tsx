@@ -16,7 +16,7 @@ export default function Section_3() {
   }, []);
 
   return (
-    <section className="flex h-[1420px] w-full flex-col px-[16px]">
+    <section className="flex h-[1420px] w-full flex-col px-[16px] sm:h-[760px]">
       <h2 className="text-on-bg-a-9 sm:text-on-bg-a-3 sm:text-pc-20sb-body text-mobile-28b-emphasis-title mt-[25px] sm:self-center">
         에이고 효과
       </h2>
