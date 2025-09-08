@@ -17,16 +17,16 @@ export default function Section_3() {
 
   return (
     <section className="flex h-[1420px] w-full flex-col px-[16px]">
-      <h2 className="text-on-bg-a-9 text-mobile-28b-emphasis-title mt-[25px]">
+      <h2 className="text-on-bg-a-9 sm:text-on-bg-a-3 sm:text-pc-20sb-body text-mobile-28b-emphasis-title mt-[25px] sm:self-center">
         에이고 효과
       </h2>
-      <h2 className="text-mobile-28b-emphasis-title bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent">
+      <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent sm:self-center">
         AIGO
         <span className="text-on-bg-a-1">만의 차별화된 경쟁력</span>
       </h2>
-      <div className="mt-[60px] flex flex-col items-center gap-[24px] sm:flex-row">
+      <div className="mt-[60px] flex flex-col items-center justify-center gap-[24px] sm:flex-row">
         {/* Card 1 */}
-        <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#627DFE] to-[#4361FF] px-[26px]">
+        <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#627DFE] to-[#4361FF] px-[26px] sm:w-[310px]">
           <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
             매출 증대
           </h3>
@@ -36,7 +36,7 @@ export default function Section_3() {
           </p>
         </div>
         {/* Card 2 */}
-        <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px]">
+        <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[310px]">
           <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
             업무 효율 증가
           </h3>
@@ -56,7 +56,7 @@ export default function Section_3() {
           </p>
         </div>
         {/* Card 3 */}
-        <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#6F86FF] to-[#A8B7FF] px-[26px]">
+        <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#6F86FF] to-[#A8B7FF] px-[26px] sm:w-[310px]">
           <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
             글로벌 확장성
           </h3>
