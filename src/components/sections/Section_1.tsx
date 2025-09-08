@@ -1,11 +1,14 @@
 import Button from "../common/Button";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import SlotCounter from "react-slot-counter";
 
 export default function Section_1() {
   const [animationStage, setAnimationStage] = useState(0);
   const [sliderValue, setSliderValue] = useState(12);
   const [showCounter, setShowCounter] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isMouseInSection, setIsMouseInSection] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const stages = [1, 2, 3, 4, 5];
@@ -21,6 +24,38 @@ export default function Section_1() {
         }
       }, index * 400);
     });
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        setMousePosition({
+          x: e.clientX - rect.left,
+          y: e.clientY - rect.top,
+        });
+      }
+    };
+
+    const handleMouseEnter = () => {
+      setIsMouseInSection(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsMouseInSection(false);
+    };
+
+    const section = sectionRef.current;
+    if (section) {
+      section.addEventListener("mousemove", handleMouseMove);
+      section.addEventListener("mouseenter", handleMouseEnter);
+      section.addEventListener("mouseleave", handleMouseLeave);
+      return () => {
+        section.removeEventListener("mousemove", handleMouseMove);
+        section.removeEventListener("mouseenter", handleMouseEnter);
+        section.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    }
   }, []);
 
   const animateSlider = () => {
@@ -50,7 +85,21 @@ export default function Section_1() {
   };
 
   return (
-    <section className="relative flex h-[675px] w-full flex-col items-center overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] sm:h-[920px]">
+    <section
+      ref={sectionRef}
+      className="relative flex h-[675px] w-full flex-col items-center overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] sm:h-[920px]"
+    >
+      {/* Blob hover effect */}
+      {isMouseInSection && (
+        <div
+          className="pointer-events-none absolute z-0 h-[200px] w-[200px] rounded-full opacity-60 blur-2xl transition-all duration-300 ease-out"
+          style={{
+            left: mousePosition.x - 100,
+            top: mousePosition.y - 100,
+            background: `radial-gradient(circle, rgba(151, 168, 255, 0.8) 0%, rgba(115, 147, 255, 0.6) 40%, rgba(26, 31, 255, 0.4) 100%)`,
+          }}
+        />
+      )}
       <h1
         className={`text-on-bg-e-1 text-mobile-28b-emphasis-title sm:text-pc-50sb-hero mt-[50px] transition-all duration-2000 ease-out sm:mt-[98px] ${
           animationStage >= 1
