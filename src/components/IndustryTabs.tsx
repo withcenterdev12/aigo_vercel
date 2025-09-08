@@ -13,7 +13,7 @@ export default function IndustryTabs({
 }>) {
   return (
     <div
-      className={`sm"bg-[#F2EFFF] flex h-auto flex-col justify-center sm:h-[170px] sm:${roundedSide === "up" ? "rounded-t-[20px]" : "rounded-b-[20px]"}`}
+      className={`flex h-auto flex-col justify-center sm:h-[170px] sm:bg-[#F2EFFF] ${roundedSide === "up" ? "sm:rounded-t-[20px]" : "sm:rounded-b-[20px]"}`}
     >
       <p className="text-mobile-15m-btn text-on-bg-a-2 sm:text-on-surface-c-1 self-center">
         상담 이력이 궁금한 산업군을 선택해주세요
