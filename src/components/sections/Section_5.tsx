@@ -2,10 +2,16 @@ export default function Section_5() {
   return (
     <section className="flex min-h-[690px] w-full flex-col items-center px-[16px] pt-[50px] pb-[25px]">
       <div className="flex w-full max-w-[960px] flex-col">
-        <h2 className="text-mobile-28b-emphasis-title">
-          <span className="text-on-bg-a-4">에이고 기능</span>
-          <br className="block sm:hidden" />
-          에이고 견적 기능의 핵심
+        <h2 className="text-mobile-28b-emphasis-title sm:text-center">
+          <span className="text-on-bg-a-4 sm:text-pc-20sb-body sm:text-on-bg-e-4">
+            에이고 기능
+          </span>
+          <br />
+          에이고{" "}
+          <span className="bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent">
+            견적 기능
+          </span>
+          의 핵심
         </h2>
         <div className="no-scrollbar mt-[60px] flex flex-row gap-[20px] overflow-x-auto">
           {/* Card 1 */}
