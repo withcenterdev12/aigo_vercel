@@ -13,7 +13,7 @@ export default function Section_5() {
           </span>
           의 핵심
         </h2>
-        <div className="no-scrollbar mt-[60px] flex flex-row gap-[20px] overflow-x-auto sm:grid sm:grid-cols-[410px_530px] sm:grid-rows-2 sm:gap-[20px] sm:overflow-visible">
+        <div className="mt-[60px] flex flex-row gap-[20px] overflow-x-auto sm:flex-wrap sm:overflow-visible">
           {/* Card 1 (Top-left, 410x358) */}
           <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
             <img
