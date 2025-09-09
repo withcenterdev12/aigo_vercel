@@ -143,11 +143,11 @@ export default function Section_1() {
         className={`absolute bottom-0 hidden translate-y-[17%] transition-all duration-2000 ease-out sm:flex ${animationStage >= 5 ? "opacity-100" : "translate-y-8 opacity-0"}`}
       >
         <img
-          src="/images/ipad_1.png"
+          src="/images/ipad_2.png"
           alt="iPad Mockup"
           className="h-[922px] w-[960px] object-contain"
         />
-        <div className="absolute top-[30%] left-[76.5%] flex h-[43px] w-[260px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
+        <div className="absolute top-[34%] left-[75%] flex h-[43px] w-[260px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
           <div className="flex items-center">
             <img
               src="/images/icon_ai_fill.svg"
@@ -169,7 +169,7 @@ export default function Section_1() {
             className="h-[17.55px] w-[17.55px]"
           />
         </div>
-        <div className="absolute top-[37.5%] left-[70%] flex h-[43px] w-[260px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
+        <div className="absolute top-[40%] left-[68.5%] flex h-[43px] w-[260px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
           <div className="flex items-center">
             <img
               src="/images/icon_user.svg"
@@ -191,7 +191,7 @@ export default function Section_1() {
             className="h-[17.55px] w-[17.55px]"
           />
         </div>
-        <div className="absolute top-[55%] -left-[11%] flex h-[127px] w-[356px] flex-col rounded-[9px] bg-white px-[14px] shadow-md">
+        <div className="absolute top-[56.5%] -left-[5%] flex h-[127px] w-[356px] flex-col rounded-[9px] bg-white px-[14px] shadow-md">
           <p className="mt-[13.5px] text-[16px] font-bold">
             프로젝트 기간 설정{" "}
             <span className="text-[10px] font-light">(주 단위)</span>
