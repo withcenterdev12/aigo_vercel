@@ -6,9 +6,9 @@ export default function Chat_1() {
   return (
     <>
       {/* Mobile */}
-      <div className="text-mobile-16r-body-light sm:text-pc-16r-subtext bg-bg-d mt-[40px] mb-[20px] flex w-full flex-col px-[16px] py-[40px] sm:mt-[0px] sm:mb-[0px] sm:max-w-[720px]">
+      <div className="text-mobile-16r-body-light bg-bg-d mt-[40px] mb-[20px] flex w-full flex-col px-[16px] py-[40px] sm:mt-[0px] sm:mb-[0px] sm:max-w-[720px]">
         <Consultant imagePath="ai_consultant_3" label="강유하" />
-        <div className="text-on-tag-1 bg-tag-1 mt-[8px] max-w-[436px] min-w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:py-[16px]">
+        <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[436px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:py-[16px]">
           <p>
             안녕하세요 AI 컨설턴트 강유하 입니다. 만
             <br className="block sm:hidden" />나 뵙게 반갑습니다
@@ -17,7 +17,7 @@ export default function Chat_1() {
             IT 프로젝트 관련 어떤 서비스를 만들고 싶은지 말씀 해주시겠어요
           </p>
         </div>
-        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] max-w-[358px] min-w-[280px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:py-[16px]">
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] w-[280px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:w-[358px] sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:py-[16px]">
           <p>
             AI 카메라를 통한 중고 시세 조회 앱을 만
             <br className="block sm:hidden" />
@@ -25,7 +25,7 @@ export default function Chat_1() {
           </p>
         </div>
         <Consultant imagePath="ai_consultant_3" label="강유하" />
-        <div className="bg-tag-1 text-on-tag-1 mt-[8px] max-w-[600px] min-w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:px-[16px] sm:py-[16px]">
+        <div className="bg-tag-1 text-on-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[600px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:px-[16px] sm:py-[16px]">
           <p>
             AI 카메라를 통해 중고 시세를 조회하는 모바일 앱 아이디어, 정말
             멋지네요!
@@ -48,7 +48,7 @@ export default function Chat_1() {
             단순히 시세 정보만 제공하는 앱인가요?
           </p>
         </div>
-        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] max-w-[474px] min-w-[266px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:py-[16px]">
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] w-[266px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:w-[474px] sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:py-[16px]">
           <p>
             1.시세 조회 정보 출처는 중고거래
             <span className="block sm:inline">
@@ -56,7 +56,7 @@ export default function Chat_1() {
             </span>
           </p>
         </div>
-        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] max-w-[459px] min-w-[252px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:py-[16px]">
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] w-[252px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:w-[459px] sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:py-[16px]">
           <p>
             2.사용자에게 단순하게 거래 되는
             <span className="block sm:inline">
@@ -65,7 +65,7 @@ export default function Chat_1() {
           </p>
         </div>
         <Consultant imagePath="ai_consultant_3" label="강유하" />
-        <div className="text-on-tag-1 bg-tag-1 mt-[8px] max-w-[440px] min-w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:px-[16px] sm:py-[16px]">
+        <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[440px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:px-[16px] sm:py-[16px]">
           <p>
             지금 까지 논의된 내용을 바탕으로
             <span className="inline sm:block">
@@ -75,14 +75,14 @@ export default function Chat_1() {
         </div>
         <QuoteCard price="8,000,000" />
         <InquireCard />
-        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] max-w-[504px] min-w-[276px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:py-[16px]">
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] w-[276px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:w-[504px] sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:py-[16px]">
           <p>
             로그인과 관리자 페이지 불필요해요.조금 더 저렴한 금액으로 견적
             안될까요?
           </p>
         </div>
         <Consultant imagePath="ai_consultant_3" label="강유하" />
-        <div className="text-on-tag-1 bg-tag-1 mt-[8px] max-w-[534px] min-w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:px-[16px] sm:py-[16px]">
+        <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[534px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:px-[16px] sm:py-[16px]">
           <p>
             말씀 하신 로그인 기능과 관리자 페이지 기능을 제외한 견적을 다시 안내
             드립니다
@@ -90,7 +90,7 @@ export default function Chat_1() {
         </div>
         <QuoteCard price="8,000,000" />
         <InquireCard />
-        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] w-[114px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:py-[16px]">
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] w-[114px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:py-[16px]">
           <p>감사합니다 :)</p>
         </div>
       </div>
