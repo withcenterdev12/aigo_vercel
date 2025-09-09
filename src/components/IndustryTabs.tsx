@@ -13,9 +13,9 @@ export default function IndustryTabs({
 }>) {
   return (
     <div
-      className={`flex h-auto max-w-[720px] flex-col justify-center sm:h-[170px] sm:bg-[#F2EFFF] ${roundedSide === "up" ? "sm:rounded-t-[20px]" : "sm:rounded-b-[20px]"}`}
+      className={`flex h-auto max-w-[720px] flex-col justify-center sm:h-[170px] sm:w-[720px] sm:bg-[#F2EFFF] ${roundedSide === "up" ? "sm:rounded-t-[20px]" : "sm:rounded-b-[20px]"}`}
     >
-      <p className="text-mobile-15m-btn text-on-bg-a-2 sm:text-on-surface-c-1 self-center">
+      <p className="text-mobile-15m-btn text-on-bg-a-2 sm:font-20sb-body sm:text-on-surface-c-1 self-center">
         상담 이력이 궁금한 산업군을 선택해주세요
       </p>
       <div className="mt-[12px] flex w-full flex-row justify-center gap-[8px] sm:gap-[20px]">
@@ -24,7 +24,9 @@ export default function IndustryTabs({
             onClick={() => {
               setSelectedOption(option.number);
             }}
-            customStyle={`hover:cursor-pointer ${selectedOption === option.number ? "border-bg-tag-1 bg-tag-1 text-on-tag-1 text-mobile-15m-btn rounded-[20px] sm:rounded-[30px] px-[12px] sm:px-[16px] py-[8px] sm:py-[10px]" : "border-tag-1 text-tag-1 text-mobile-15m-btn rounded-[20px] sm:rounded-[30px] border-1 px-[12px] sm:-[16px] py-[8px] sm:py-[10px]"}`}
+            customStyle={`
+              text-mobile-15m-btn sm:text-pc-16r-subtexthover:cursor-pointer rounded-[20px] sm:rounded-[30px] sm:px-[16px] py-[8px] sm:py-[10px] px-[12px]
+              ${selectedOption === option.number ? "border-bg-tag-1 bg-tag-1 text-on-tag-1" : "border-tag-1 text-tag-1 border-1"}`}
           >
             {option.label}
           </Button>

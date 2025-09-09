@@ -6,7 +6,7 @@ export default function Chat_2() {
   return (
     <>
       {/* Mobile */}
-      <div className="text-mobile-16r-body-light bg-bg-d mt-[40px] mb-[20px] flex h-[1670px] w-full flex-col px-[16px] py-[40px]">
+      <div className="text-mobile-16r-body-light bg-bg-d mt-[40px] mb-[20px] flex h-[1670px] w-full flex-col px-[16px] py-[40px] sm:mt-[0px] sm:mb-[0px] sm:max-w-[720px]">
         <Consultant imagePath="ai_consultant_4" label="강유준" />
         <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight">
           <p>
