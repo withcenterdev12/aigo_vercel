@@ -1,6 +1,6 @@
 export default function Section_2() {
   return (
-    <section className="flex h-[660px] w-full flex-col px-[16px] sm:h-[1220px] sm:px-[120px]">
+    <section className="flex min-h-[660px] w-full flex-col px-[16px] sm:min-h-[1220px] sm:w-[960px] overflow-hidden">
       {/* Mobile View Section Header */}
       <h2 className="text-mobile-28b-emphasis-title text-on-bg-a-9 mt-[50px] block sm:hidden">
         AI 견적
@@ -15,7 +15,7 @@ export default function Section_2() {
         매출 향상을 만드는 에이고
       </p>
       {/* Container */}
-      <div className="bg-surface-a relative mt-[60px] flex h-[400px] w-full flex-col items-center rounded-[12px] sm:mt-[100px] sm:h-[1020px]">
+      <div className="bg-surface-a relative mt-[60px] flex min-h-[400px] w-full flex-col items-center rounded-[12px] sm:mt-[100px] sm:min-h-[1020px] overflow-hidden">
         {/* PC View Elements */}
         <h2 className="text-pc-20sb-body text-on-surface-a-5 mt-[40px] hidden sm:block">
           AI 견적
@@ -27,7 +27,7 @@ export default function Section_2() {
         <p className="text-pc-16r-subtext text-on-surface-a-6 mt-[16px] hidden sm:block">
           24시간 고객 상담, 맞춤 견적 자동처리로 매출 향상을 만드는 에이고
         </p>
-        <div className="relative mt-[60px] hidden h-[800px] w-full sm:block">
+        <div className="relative mt-[60px] hidden h-[800px] w-full sm:block overflow-hidden">
           <img
             src="/images/showcase_ipad.png"
             className="absolute right-[5%] z-20 h-auto w-[620px]"
@@ -48,8 +48,8 @@ export default function Section_2() {
         <p className="text-on-surface-a-6 text-14m-subtext mt-[32px] block sm:hidden">
           *AI 견적 받기 화면
         </p>
-        <div className="absolute bottom-0 block sm:hidden">
-          <img src="/images/phone_2.png" className="h-auto w-[226px]" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 block sm:hidden">
+          <img src="/images/phone_2.png" className="h-auto w-[226px] max-w-full" />
         </div>
       </div>
     </section>

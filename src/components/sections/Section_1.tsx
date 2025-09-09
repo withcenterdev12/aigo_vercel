@@ -87,7 +87,7 @@ export default function Section_1() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex h-[675px] w-full flex-col items-center overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] sm:h-[920px]"
+      className="relative flex h-[675px] w-full flex-col items-center overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] sm:h-[calc(100svh-66px)]"
     >
       {/* Blob hover effect */}
       {isMouseInSection && (
@@ -145,7 +145,7 @@ export default function Section_1() {
         <img
           src="/images/ipad_1.png"
           alt="iPad Mockup"
-          className="h-[807px] w-[840px] flex-shrink-0 object-contain"
+          className="h-[807px] w-[840px] object-contain"
         />
         <div className="absolute top-[30%] left-[76.5%] flex h-[43px] w-[260px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
           <div className="flex items-center">
@@ -159,9 +159,9 @@ export default function Section_1() {
           </div>
           <p className="text-pc-16r-subtext font-semibold text-[#2A2B2B]">
             {showCounter ? (
-              <SlotCounter value="15,000,000" startValue={0} duration={0.75} />
+              <SlotCounter value="90,000,000" startValue={0} duration={0.75} />
             ) : (
-              <span className="invisible">15,000,000</span>
+              <span className="invisible">90,000,000</span>
             )}
           </p>
           <img
@@ -181,9 +181,9 @@ export default function Section_1() {
           </div>
           <p className="text-pc-16r-subtext font-semibold text-[#2A2B2B]">
             {showCounter ? (
-              <SlotCounter value="10,000,000" startValue={0} duration={0.5} />
+              <SlotCounter value="120,000,000" startValue={0} duration={0.5} />
             ) : (
-              <span className="invisible">10,000,000</span>
+              <span className="invisible">120,000,000</span>
             )}
           </p>
           <img
@@ -271,9 +271,9 @@ export default function Section_1() {
           </div>
           <p className="text-[10px] font-bold text-[#2A2B2B]">
             {showCounter ? (
-              <SlotCounter value="15,000,000" startValue={0} duration={0.75} />
+              <SlotCounter value="90,000,000" startValue={0} duration={0.75} />
             ) : (
-              <span className="invisible">15,000,000</span>
+              <span className="invisible">90,000,000</span>
             )}
           </p>
           <img
@@ -291,9 +291,9 @@ export default function Section_1() {
           </div>
           <p className="text-[10px] font-bold text-[#2A2B2B]">
             {showCounter ? (
-              <SlotCounter value="10,000,000" startValue={0} duration={0.5} />
+              <SlotCounter value="120,000,000" startValue={0} duration={0.5} />
             ) : (
-              <span className="invisible">10,000,000</span>
+              <span className="invisible">120,000,000</span>
             )}
           </p>
           <img

@@ -10,7 +10,7 @@ import Section_9 from "./components/sections/Section_9";
 
 function App() {
   return (
-    <main className="mx-auto flex flex-col sm:w-[1200px]">
+    <main className="mx-auto flex flex-col items-center">
       <Header />
       <Section_1 />
       <Section_2 />
@@ -27,3 +27,5 @@ function App() {
 export default App;
 
 //<main className="mx-auto flex flex-col sm:w-[1200px]">
+
+// Section_2 overflows
