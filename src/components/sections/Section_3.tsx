@@ -25,9 +25,9 @@ export default function Section_3() {
           AIGO
           <span className="text-on-bg-a-1">만의 차별화된 경쟁력</span>
         </h2>
-        <div className="sm:gap-[] mt-[60px] flex flex-col items-center justify-center gap-[24px] sm:flex-row sm:gap-[18px]">
+        <div className="mt-[60px] flex flex-col items-center justify-center gap-[24px] sm:flex-row sm:gap-[18px]">
           {/* Card 1 */}
-          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#627DFE] to-[#4361FF] px-[26px] sm:w-[310px] sm:rounded-[20px]">
+          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#627DFE] to-[#4361FF] px-[26px] sm:w-[308px] sm:rounded-[20px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               매출 증대
             </h3>
@@ -37,7 +37,7 @@ export default function Section_3() {
             </p>
           </div>
           {/* Card 2 */}
-          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[310px] sm:rounded-[20px]">
+          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               업무 효율 증가
             </h3>
@@ -57,7 +57,7 @@ export default function Section_3() {
             </p>
           </div>
           {/* Card 3 */}
-          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#6F86FF] to-[#A8B7FF] px-[26px] sm:w-[310px] sm:rounded-[20px]">
+          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#6F86FF] to-[#A8B7FF] px-[26px] sm:w-[308px] sm:rounded-[20px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               글로벌 확장성
             </h3>
