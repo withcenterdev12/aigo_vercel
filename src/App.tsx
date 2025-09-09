@@ -25,3 +25,5 @@ function App() {
 }
 
 export default App;
+
+//<main className="mx-auto flex flex-col sm:w-[1200px]">

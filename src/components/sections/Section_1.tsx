@@ -92,7 +92,7 @@ export default function Section_1() {
       {/* Blob hover effect */}
       {isMouseInSection && (
         <div
-          className="pointer-events-none absolute z-0 h-[200px] w-[200px] rounded-full opacity-60 blur-2xl transition-all duration-300 ease-out"
+          className="pointer-events-none absolute z-0 h-[200px] w-[200px] rounded-full opacity-0 blur-2xl transition-all duration-300 ease-out sm:opacity-60"
           style={{
             left: mousePosition.x - 100,
             top: mousePosition.y - 100,

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import IndustryTabs from "../IndustryTabs";
+import Chat_1 from "../Chat_1";
 
 export default function Section_8() {
   const [selectedOption, setSelectedOption] = useState("option_1");
@@ -15,10 +16,11 @@ export default function Section_8() {
         setSelectedOption={setSelectedOption}
         roundedSide="up"
       />
-      <img
+      {selectedOption && <Chat_1 />}
+      {/* <img
         src={`/images/mobile_${selectedOption}.png`}
         className="mt-[40px] mb-[20px] h-full w-full sm:mt-[0px] sm:mb-[0px]"
-      />
+      /> */}
       <IndustryTabs
         selectedOption={selectedOption}
         setSelectedOption={setSelectedOption}

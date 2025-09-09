@@ -188,7 +188,7 @@
   --font-size-28b-emphasis-title: 28px;
   --line-height-28b-emphasis-title: 30px;
   --letter-spacing-28b-emphasis-title: -3%;
-  --font-weight-28b-emphasis-title: bold;
+  --font-weight-28b-emphasis-title: 700;
   
   --font-size-24sb-title1: 24px;
   --line-height-24sb-title1: 31px;
@@ -198,7 +198,7 @@
   --font-size-20sb-title2: 20px;
   --line-height-20sb-title2: 26px;
   --letter-spacing-20sb-title2: -3%;
-  --font-weight-20sb-title2: bold;
+  --font-weight-20sb-title2: 700;
   
   --font-size-16sb-body: 16px;
   --line-height-16sb-body: 21px;
@@ -208,7 +208,7 @@
   --font-size-16r-body-light: 16px;
   --line-height-16r-body-light: 18px;
   --letter-spacing-16r-body-light: -0.3%;
-  --font-weight-16r-body-light: 400;
+  --font-weight-16r-body-light: 300;
   
   --font-size-15m-btn: 15px;
   --line-height-15m-btn: 18px;
