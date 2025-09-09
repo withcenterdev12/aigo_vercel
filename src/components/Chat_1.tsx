@@ -1,10 +1,12 @@
 import Consultant from "./common/Consultant";
+import InquireCard from "./common/InquireCard";
+import QuoteCard from "./common/QuoteCard";
 
-export default function MobileChat_1() {
+export default function Chat_1() {
   return (
     <>
       {/* Mobile */}
-      <div className="text-mobile-16r-body-light bg-bg-d mt-[40px] mb-[20px] flex h-[1852px] w-full flex-col px-[16px] py-[40px]">
+      <div className="text-mobile-16r-body-light bg-bg-d mt-[40px] mb-[20px] flex h-[1890px] w-full flex-col px-[16px] py-[40px]">
         <Consultant imagePath="ai_consultant_3" label="강유하" />
         <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight">
           <p>
@@ -57,6 +59,26 @@ export default function MobileChat_1() {
             지금 까지 논의된 내용을 바탕으로 주요 기능과 예상 비용을 정리한
             견적서를 아래에 제공해 드립니다
           </p>
+        </div>
+        <QuoteCard price="8,000,000" />
+        <InquireCard />
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] h-[52px] w-[276px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight">
+          <p>
+            로그인과 관리자 페이지 불필요해요.조금 더 저렴한 금액으로 견적
+            안될까요?
+          </p>
+        </div>
+        <Consultant imagePath="ai_consultant_3" label="강유하" />
+        <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight">
+          <p>
+            말씀 하신 로그인 기능과 관리자 페이지 기능을 제외한 견적을 다시 안내
+            드립니다
+          </p>
+        </div>
+        <QuoteCard price="8,000,000" />
+        <InquireCard />
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] h-[34px] w-[112px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight">
+          <p>감사합니다 :)</p>
         </div>
       </div>
     </>
