@@ -145,7 +145,7 @@ export default function Section_1() {
         <img
           src="/images/ipad_1.png"
           alt="iPad Mockup"
-          className="h-[807px] w-[840px] object-contain"
+          className="h-[922px] w-[960px] object-contain"
         />
         <div className="absolute top-[30%] left-[76.5%] flex h-[43px] w-[260px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
           <div className="flex items-center">
