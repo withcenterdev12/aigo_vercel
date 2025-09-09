@@ -4,7 +4,7 @@ import SlotCounter from "react-slot-counter";
 
 export default function Section_1() {
   const [animationStage, setAnimationStage] = useState(0);
-  const [sliderValue, setSliderValue] = useState(12);
+  const [sliderValue, setSliderValue] = useState(0);
   const [showCounter, setShowCounter] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMouseInSection, setIsMouseInSection] = useState(false);
@@ -59,8 +59,8 @@ export default function Section_1() {
   }, []);
 
   const animateSlider = () => {
-    const startValue = 12;
-    const endValue = 28;
+    const startValue = 0;
+    const endValue = 6;
     const duration = 1000;
     const startTime = Date.now();
 
@@ -207,17 +207,17 @@ export default function Section_1() {
             type="range"
             readOnly
             disabled
-            min="12"
-            max="36"
+            min="0"
+            max="8"
             value={sliderValue}
             className="slider h-1 w-full cursor-pointer appearance-none rounded-lg bg-[#B5B5B5]"
             style={{
-              background: `linear-gradient(to right, #81AFE9 0%, #81AFE9 ${((sliderValue - 12) / (36 - 12)) * 100}%, #B5B5B5 ${((sliderValue - 12) / (36 - 12)) * 100}%, #B5B5B5 100%)`,
+              background: `linear-gradient(to right, #81AFE9 0%, #81AFE9 ${(sliderValue / 8) * 100}%, #B5B5B5 ${(sliderValue / 8) * 100}%, #B5B5B5 100%)`,
             }}
           />
           <div className="mt-[6px] flex w-full flex-row justify-between text-[7.8px] text-[#94949494]">
-            <p>12주</p>
-            <p>36주</p>
+            <p>0주</p>
+            <p>8주</p>
           </div>
         </div>
       </div>
@@ -248,17 +248,17 @@ export default function Section_1() {
             type="range"
             readOnly
             disabled
-            min="12"
-            max="36"
+            min="0"
+            max="8"
             value={sliderValue}
             className="slider h-1 w-full cursor-pointer appearance-none rounded-lg bg-[#B5B5B5]"
             style={{
-              background: `linear-gradient(to right, #81AFE9 0%, #81AFE9 ${((sliderValue - 12) / (36 - 12)) * 100}%, #B5B5B5 ${((sliderValue - 12) / (36 - 12)) * 100}%, #B5B5B5 100%)`,
+              background: `linear-gradient(to right, #81AFE9 0%, #81AFE9 ${(sliderValue / 8) * 100}%, #B5B5B5 ${(sliderValue / 8) * 100}%, #B5B5B5 100%)`,
             }}
           />
           <div className="mt-[8px] flex w-full flex-row justify-between text-[7.8px] text-[#94949494]">
-            <p>12주</p>
-            <p>36주</p>
+            <p>0주</p>
+            <p>8주</p>
           </div>
         </div>
         <div className="absolute top-[43%] -left-[31%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
