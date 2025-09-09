@@ -4,7 +4,7 @@ export default function Section_6() {
       <div className="flex w-full max-w-[960px] flex-col">
         <h2 className="text-mobile-28b-emphasis-title text-on-bg-e-4 sm:text-pc-20sb-body sm:text-center">
           관리자 전용
-          <br />{" "}
+          <br />
           <span className="text-on-bg-a-1 sm:text-pc-32b-emphasis-title">
             효율적 견적 관리 도우미
           </span>
