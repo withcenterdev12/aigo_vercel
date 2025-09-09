@@ -10,11 +10,9 @@ export default function Section_7() {
         </h2>
         <img
           src="/images/thumbnail.png"
-          className="mt-[20px] h-[200px] w-full sm:mt-[80px] sm:h-[600px]"
+          className="mt-[20px] h-[200px] w-full object-cover sm:mt-[80px] sm:h-[600px] sm:w-[960px]"
         />
       </div>
     </section>
   );
 }
-
-// <section className="flex h-[334px] w-full flex-col items-center px-[16px] py-[16px] sm:h-[960px] sm:px-[100px] sm:py-[100px]">
