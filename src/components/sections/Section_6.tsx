@@ -1,7 +1,7 @@
 export default function Section_6() {
   return (
     <section className="mt-[25px] flex min-h-[690px] w-full flex-col items-center bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] px-[16px] pb-[25px]">
-      <div className="w-full max-w-[1200px]">
+      <div className="flex w-full max-w-[960px] flex-col">
         <h2 className="text-mobile-28b-emphasis-title text-on-bg-e-4 sm:text-pc-20sb-body sm:text-center">
           관리자 전용
           <br />{" "}
@@ -28,7 +28,7 @@ export default function Section_6() {
           </div>
           {/* Item 2 */}
           <div className="flex flex-col gap-[11px]">
-            <div className="text-mobile-20sb-title2 sm:text-pc-26sb-title flex flex-row items-center">
+            <div className="text-mobile-20sb-title2 sm:text-pc-26sb-title flex flex-row items-center sm:justify-end">
               <img
                 src="/images/icon_2.svg"
                 className="mr-[4px] h-[32px] w-[32px] sm:h-[36px] sm:w-[36px]"
@@ -37,9 +37,10 @@ export default function Section_6() {
                 대화 이력 보기
               </p>
             </div>
-            <p className="text-mobile-16sb-body text-on-bg-a-2 sm:text-pc-20sb-body">
-              서비스를 끝까지 사용하지 않더라도, 대화이력 (채팅 및 파일) <br />
-              모두 확인 가능.
+            <p className="text-mobile-16sb-body text-on-bg-a-2 sm:text-pc-20sb-body sm:text-end">
+              서비스를 끝까지 사용하지 않더라도, 대화이력
+              <br className="hidden sm:block" />
+              채팅 및 파일 모두 확인 가능합니다
             </p>
           </div>
           {/* Item 3 */}
@@ -60,7 +61,7 @@ export default function Section_6() {
           </div>
           {/* Item 4 */}
           <div className="flex flex-col gap-[11px]">
-            <div className="text-mobile-20sb-title2 sm:text-pc-26sb-title flex flex-row items-center">
+            <div className="text-mobile-20sb-title2 sm:text-pc-26sb-title flex flex-row items-center sm:justify-end">
               <img
                 src="/images/icon_4.svg"
                 className="mr-[4px] h-[32px] w-[32px] sm:h-[36px] sm:w-[36px]"
@@ -69,12 +70,12 @@ export default function Section_6() {
                 단가표 관리
               </p>
             </div>
-            <p className="text-mobile-16sb-body text-on-bg-a-2 sm:text-pc-20sb-body">
+            <p className="text-mobile-16sb-body text-on-bg-a-2 sm:text-pc-20sb-body sm:text-end">
               단가표를 확인하고 내용을 수정할 수 있습니다
             </p>
           </div>
           {/* Item 5 */}
-          <div className="flex flex-col gap-[11px]">
+          <div className="flex flex-col gap-[11px] sm:hidden">
             <div className="text-mobile-20sb-title2 sm:text-pc-26sb-title flex flex-row items-center">
               <img
                 src="/images/icon_5.svg"
@@ -89,6 +90,20 @@ export default function Section_6() {
               있습니다.
             </p>
           </div>
+        </div>
+        <div className="mt-[80px] hidden flex-col gap-[11px] self-center sm:flex">
+          <div className="text-mobile-20sb-title2 sm:text-pc-26sb-title flex flex-row items-center justify-center">
+            <img
+              src="/images/icon_5.svg"
+              className="mr-[4px] h-[32px] w-[32px] sm:h-[36px] sm:w-[36px]"
+            />
+            <p className="bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent">
+              견적 문의
+            </p>
+          </div>
+          <p className="text-mobile-16sb-body text-on-bg-a-2 sm:text-pc-20sb-body">
+            AI답변을 기반으로 고객 견적에 대한 문의를 빠르게 응대할 수 있습니다.
+          </p>
         </div>
       </div>
     </section>
