@@ -1,6 +1,6 @@
 export default function Section_5() {
   return (
-    <section className="flex min-h-[690px] w-full flex-col items-center px-[16px] pt-[50px] pb-[25px]">
+    <section className="flex min-h-[690px] w-full flex-col items-center px-[16px] pt-[50px] pb-[25px] sm:bg-gradient-to-b sm:from-[#FFFFFF] sm:to-[#ECEFFE] sm:py-[100px]">
       <div className="flex w-full max-w-[960px] flex-col">
         <h2 className="text-mobile-28b-emphasis-title sm:text-center">
           <span className="text-on-bg-a-4 sm:text-pc-20sb-body sm:text-on-bg-e-4">
@@ -15,7 +15,7 @@ export default function Section_5() {
         </h2>
         <div className="mt-[60px] flex flex-row gap-[20px] overflow-x-auto sm:flex-wrap sm:overflow-visible">
           {/* Card 1 (Top-left, 410x358) */}
-          <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
+          <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
             <img
               src="/images/card_image_1.svg"
               className="h-[190px] w-[264px] self-center object-contain"
@@ -28,7 +28,7 @@ export default function Section_5() {
             </p>
           </div>
           {/* Card 2 (Top-right, 530x358) */}
-          <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px] sm:px-[32px] sm:py-[32px]">
+          <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px] sm:px-[32px] sm:py-[32px]">
             <img
               src="/images/card_image_2.svg"
               className="h-[190px] w-[264px] self-center object-contain"
@@ -37,11 +37,12 @@ export default function Section_5() {
               견적서 공유링크 보안 설정
             </p>
             <p className="text-mobile-16sb-body text-on-surface-a-5 mt-[12px]">
-              유효기간, 비밀번호 설정을 통해 <br /> 보안 강화 및 혼선 방지
+              유효기간, 비밀번호 설정을 통해 <br className="block sm:hidden" />{" "}
+              보안 강화 및 혼선 방지
             </p>
           </div>
           {/* Card 3 (Bottom-left, 530x358) */}
-          <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px]">
+          <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px]">
             <img
               src="/images/card_image_3.svg"
               className="h-[190px] w-[264px] self-center object-contain"
@@ -54,16 +55,17 @@ export default function Section_5() {
             </p>
           </div>
           {/* Card 4 (Bottom-right, 410x358) */}
-          <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
+          <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
             <img
               src="/images/card_image_4.svg"
               className="h-[190px] w-[264px] self-center object-contain"
             />
             <p className="text-mobile-20sb-title2 mt-[32px] tracking-tight">
-              엑셀 견적서 다운로드, 수정가능
+              엑셀 견적서 다운로드 및 수정 가능
             </p>
             <p className="text-mobile-16sb-body text-on-surface-a-5 mt-[12px]">
-              최신 데이터를 엑셀로 내려받아 <br /> 바로 공유 가능
+              최신 데이터를 엑셀로 내려받아 <br className="block sm:hidden" />{" "}
+              바로 공유 가능
             </p>
           </div>
         </div>
