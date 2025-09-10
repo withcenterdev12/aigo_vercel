@@ -26,6 +26,9 @@ export default function Section_5() {
             <p className="text-mobile-16sb-body text-on-surface-a-5 mt-[12px] tracking-tight">
               다양한 매체의 자료를 분석하고 <br /> 빠르고 정확한 결과를 도출
             </p>
+            <div className="bg-tag-1 absolute top-[5%] right-[10%] rounded-[20px] px-[10px] py-[4px]">
+              <p className="text-mobile-15m-btn text-on-tag-1">공통</p>
+            </div>
           </div>
           {/* Card 2 (Top-right, 530x358) */}
           <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px] sm:px-[32px] sm:py-[32px]">
@@ -40,6 +43,9 @@ export default function Section_5() {
               유효기간, 비밀번호 설정을 통해 <br className="block sm:hidden" />{" "}
               보안 강화 및 혼선 방지
             </p>
+            <div className="bg-tag-1 absolute top-[5%] right-[10%] rounded-[20px] px-[10px] py-[4px]">
+              <p className="text-mobile-15m-btn text-on-tag-1">직원 PRO</p>
+            </div>
           </div>
           {/* Card 3 (Bottom-left, 530x358) */}
           <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px]">
@@ -53,6 +59,9 @@ export default function Section_5() {
             <p className="text-mobile-16sb-body text-on-surface-a-5 mt-[12px] tracking-tight">
               별도 변환 없이 즉시 전달 가능한 자료로 의사소통 시간 단축
             </p>
+            <div className="bg-tag-1 absolute top-[5%] right-[10%] rounded-[20px] px-[10px] py-[4px]">
+              <p className="text-mobile-15m-btn text-on-tag-1">공통</p>
+            </div>
           </div>
           {/* Card 4 (Bottom-right, 410x358) */}
           <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
@@ -60,13 +69,19 @@ export default function Section_5() {
               src="/images/card_image_4.svg"
               className="h-[190px] w-[264px] self-center object-contain"
             />
-            <p className="text-mobile-20sb-title2 mt-[32px] tracking-tight">
+            <p className="text-mobile-20sb-title2 mt-[32px] hidden tracking-tight sm:block">
               엑셀 견적서 다운로드 및 수정 가능
+            </p>
+            <p className="text-mobile-20sb-title2 mt-[32px] block tracking-tight sm:hidden">
+              엑셀 견적서 다운로드, 수정가능
             </p>
             <p className="text-mobile-16sb-body text-on-surface-a-5 mt-[12px]">
               최신 데이터를 엑셀로 내려받아 <br className="block sm:hidden" />{" "}
               바로 공유 가능
             </p>
+            <div className="bg-tag-1 absolute top-[5%] right-[10%] rounded-[20px] px-[10px] py-[4px]">
+              <p className="text-mobile-15m-btn text-on-tag-1">직원 PRO</p>
+            </div>
           </div>
         </div>
       </div>
