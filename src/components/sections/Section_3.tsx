@@ -16,12 +16,12 @@ export default function Section_3() {
   }, []);
 
   return (
-    <section className="flex h-[1420px] w-full flex-col items-center px-[16px] sm:h-[760px]">
+    <section className="flex w-full flex-col items-center px-[16px] py-[25px] sm:px-[120px] sm:py-[100px]">
       <div className="flex w-full max-w-[1200px] flex-col items-center">
-        <h2 className="text-on-bg-a-9 sm:text-on-bg-a-3 sm:text-pc-20sb-body text-mobile-28b-emphasis-title mt-[25px] sm:self-center">
+        <h2 className="text-on-bg-a-9 sm:text-on-bg-a-3 sm:text-pc-20sb-body text-mobile-28b-emphasis-title mt-[25px] self-start sm:self-center">
           에이고 효과
         </h2>
-        <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent sm:self-center">
+        <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title self-start bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent sm:self-center">
           AIGO
           <span className="text-on-bg-a-1">만의 차별화된 경쟁력</span>
         </h2>
@@ -124,3 +124,5 @@ export default function Section_3() {
     </section>
   );
 }
+
+// <section className="flex h-[1420px] w-full flex-col items-center px-[16px] sm:h-[760px]">
