@@ -126,7 +126,7 @@ export default function PlanAccordion({
                               <div className="space-y-1 py-2 pl-8">
                                 {item.details.map((detailObj, detailIndex) => (
                                   <div key={detailIndex} className="space-y-1">
-                                    <div className="text-xs text-gray-500">
+                                    <div className="text-on-surface-a-4 text-xs">
                                       <span className="mr-2">-</span>
                                       <span>{detailObj.detail}</span>
                                     </div>

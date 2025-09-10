@@ -18,7 +18,7 @@ export default function Section_11() {
   return (
     <section
       id="review"
-      className="flex w-full flex-col items-center py-[19px]"
+      className="flex w-full flex-col items-center py-[20px] sm:py-[80px]"
     >
       <div className="flex w-full flex-col items-center overflow-hidden">
         <div className="mb-[60px] max-w-[960px]">
