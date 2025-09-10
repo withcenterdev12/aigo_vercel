@@ -1,18 +1,23 @@
 export const navigationBarItems = [
   {
     label: "비즈니스 맞춤분석",
+    href: "#report",
   },
   {
     label: "효과영상",
+    href: "#video",
   },
   {
     label: "시나리오",
+    href: "#scenario",
   },
   {
     label: "추천 및 요금",
+    href: "#pricing",
   },
   {
     label: "후기 및 FAQ",
+    href: "#review",
   },
 ];
 

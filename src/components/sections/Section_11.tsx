@@ -16,7 +16,10 @@ export default function Section_11() {
       : testimonials.slice(0, 2);
 
   return (
-    <section className="flex w-full flex-col items-center py-[19px]">
+    <section
+      id="review"
+      className="flex w-full flex-col items-center py-[19px]"
+    >
       <div className="flex w-full flex-col items-center overflow-hidden">
         <div className="mb-[60px] max-w-[960px]">
           <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title self-start px-[16px] sm:self-center sm:text-center">

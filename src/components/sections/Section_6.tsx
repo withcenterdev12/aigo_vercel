@@ -1,6 +1,6 @@
 export default function Section_6() {
   return (
-    <section className="mt-[25px] flex min-h-[690px] w-full flex-col items-center bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] px-[16px] pb-[25px]">
+    <section className="flex min-h-[690px] w-full flex-col items-center bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] px-[16px] pb-[25px] sm:mt-[100px]">
       <div className="flex w-full max-w-[960px] flex-col">
         <h2 className="text-mobile-28b-emphasis-title text-on-bg-e-4 sm:text-pc-20sb-body sm:text-center">
           관리자 전용

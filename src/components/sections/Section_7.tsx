@@ -1,6 +1,9 @@
 export default function Section_7() {
   return (
-    <section className="flex w-full flex-col items-center px-[16px] py-[25px] sm:py-[100px]">
+    <section
+      id="video"
+      className="flex w-full flex-col items-center px-[16px] py-[25px] sm:py-[100px]"
+    >
       <div className="flex flex-col items-center">
         <p className="text-mobile-14m-subtext sm:text-pc-20sb-body text-on-bg-a-2 sm:text-on-bg-a-3">
           에이고 효과
