@@ -1,6 +1,6 @@
 export default function Section_9() {
   return (
-    <section className="mb-[25px] flex h-[680px] w-full flex-col items-center px-[16px] py-[25px] sm:py-[80px]">
+    <section className="mb-[25px] flex h-[680px] w-full flex-col items-center bg-amber-50 px-[16px] py-[25px] sm:py-[80px]">
       <div className="flex w-full max-w-[1200px] flex-col items-center">
         <div className="sm:bg-surface-a flex w-full max-w-[960px] flex-col rounded-[20px] py-[40px]">
           <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title sm:self-center sm:text-center">
