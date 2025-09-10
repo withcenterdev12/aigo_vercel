@@ -7,7 +7,7 @@ export default function Chat_1() {
     <div className="bg-bg-d mt-[40px] mb-[20px] flex w-full max-w-[960px] flex-col items-center sm:mt-[0px] sm:mb-[0px]">
       <div className="text-mobile-16r-body-light bg-bg-d flex w-full flex-col px-[16px] py-[40px] sm:max-w-[720px]">
         <Consultant imagePath="ai_consultant_3" label="강유하" />
-        <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[436px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:py-[16px]">
+        <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[446px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:py-[16px]">
           <p>
             안녕하세요 AI 컨설턴트 강유하 입니다. 만
             <br className="block sm:hidden" />나 뵙게 반갑습니다

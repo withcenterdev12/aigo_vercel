@@ -51,7 +51,7 @@ export default function PlanAccordion({
 
   return (
     <div
-      className={`flex w-full flex-col self-start rounded-2xl border border-gray-100 bg-white p-[16px] shadow-lg ${
+      className={`flex w-full flex-col self-start rounded-2xl border border-gray-100 bg-white p-[16px] shadow-lg sm:min-h-[230px] ${
         isExpanded
           ? anySectionExpanded
             ? "sm:min-h-[426px]" // allow growth if section is open

@@ -5,7 +5,7 @@ export default function Section_10() {
   return (
     <section
       id="pricing"
-      className="flex w-full flex-col items-center bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] px-[16px] py-[25px] sm:py-[80px]"
+      className="flex w-full flex-col items-center bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] px-[16px] py-[25px] sm:pt-[50px] sm:pb-[90px]"
     >
       <div className="flex w-full max-w-[960px] flex-col items-center">
         <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title self-start sm:self-center sm:text-center">
