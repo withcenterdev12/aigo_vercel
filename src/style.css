@@ -315,3 +315,29 @@
     scrollbar-width: none;
   }
 }
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 32px));
+  }
+}
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
+}
