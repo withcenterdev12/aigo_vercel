@@ -18,7 +18,7 @@ export default function Section_5() {
           <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
             <img
               src="/images/card_image_1.svg"
-              className="h-[190px] w-[264px] self-center object-contain"
+              className="h-[190px] w-[264px] self-center object-contain transition-transform duration-300 hover:scale-110"
             />
             <p className="text-mobile-20sb-title2 mt-[32px]">
               PDF/이미지/URL 분석
@@ -34,7 +34,7 @@ export default function Section_5() {
           <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px] sm:px-[32px] sm:py-[32px]">
             <img
               src="/images/card_image_2.svg"
-              className="h-[190px] w-[264px] self-center object-contain"
+              className="h-[190px] w-[264px] self-center object-contain transition-transform duration-300 hover:scale-110"
             />
             <p className="text-mobile-20sb-title2 mt-[32px]">
               견적서 공유링크 보안 설정
@@ -51,7 +51,7 @@ export default function Section_5() {
           <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px]">
             <img
               src="/images/card_image_3.svg"
-              className="h-[190px] w-[264px] self-center object-contain"
+              className="h-[190px] w-[264px] self-center object-contain transition-transform duration-300 hover:scale-110"
             />
             <p className="text-mobile-20sb-title2 mt-[32px]">
               PDF 견적서 다운로드 및 공유
@@ -67,7 +67,7 @@ export default function Section_5() {
           <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
             <img
               src="/images/card_image_4.svg"
-              className="h-[190px] w-[264px] self-center object-contain"
+              className="h-[190px] w-[264px] self-center object-contain transition-transform duration-300 hover:scale-110"
             />
             <p className="text-mobile-20sb-title2 mt-[32px] hidden tracking-tight sm:block">
               엑셀 견적서 다운로드 및 수정 가능
