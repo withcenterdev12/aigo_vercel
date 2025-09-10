@@ -5,11 +5,11 @@ export default function Section_2() {
       <h2 className="text-mobile-28b-emphasis-title text-on-bg-a-9 mt-[50px] block sm:hidden">
         AI 견적
       </h2>
-      <h2 className="text-mobile-28b-emphasis-title block bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent sm:hidden">
+      <h2 className="text-mobile-28b-emphasis-title mt-[8px] block bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text tracking-tight text-transparent sm:hidden">
         1:1 상담 분석, <span className="text-on-bg-a-1">빠른</span> 견적{" "}
         <span className="text-on-bg-a-1"> 생성</span>
       </h2>
-      <p className="text-mobile-16r-body-light text-on-bg-a-3 block sm:hidden">
+      <p className="text-mobile-16r-body-light text-on-bg-a-3 mt-[20px] block sm:hidden">
         24시간 고객 상담, 맞춤 견적 자동처리로
         <br className="block sm:hidden" />
         매출 향상을 만드는 에이고
@@ -45,15 +45,13 @@ export default function Section_2() {
           </p>
         </div>
         {/* Mobile View Elements */}
-        <p className="text-on-surface-a-6 text-14m-subtext mt-[32px] block sm:hidden">
+        <p className="text-on-surface-a-6 text-14m-subtext mt-[28px] block sm:hidden">
           *AI 견적 받기 화면
         </p>
-        <div className="absolute bottom-0 left-1/2 block -translate-x-1/2 sm:hidden">
-          <img
-            src="/images/phone_2.png"
-            className="h-auto w-[226px] max-w-full"
-          />
-        </div>
+        <img
+          src="/images/phone_2.png"
+          className="absolute bottom-0 block h-auto w-[226px] max-w-full sm:hidden"
+        />
       </div>
     </section>
   );

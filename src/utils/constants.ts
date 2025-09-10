@@ -308,6 +308,45 @@ export const planDetails = [
   },
 ];
 
+export const gridOptions = [
+  {
+    image: "/images/option_1.svg",
+    label: ["누적", "가입고객수"],
+  },
+  {
+    image: "/images/option_2.svg",
+    label: ["방문자 수"],
+  },
+  {
+    image: "/images/option_3.svg",
+    label: ["방문 유형"],
+  },
+  {
+    image: "/images/option_4.svg",
+    label: ["견적 문의", "요청"],
+  },
+  {
+    image: "/images/option_5.svg",
+    label: ["견적 문의", "요청 대상"],
+  },
+  {
+    image: "/images/option_6.svg",
+    label: ["AI 답변", "확인 필요"],
+  },
+  {
+    image: "/images/option_7.svg",
+    label: ["견적 PDF", "다운로드"],
+  },
+  {
+    image: "/images/option_8.svg",
+    label: ["견적 다운로드", "TOP 5"],
+  },
+  {
+    image: "/images/option_9.svg",
+    label: ["자주 접속", "TOP 5"],
+  },
+];
+
 export const testimonials = [
   {
     name: "박",

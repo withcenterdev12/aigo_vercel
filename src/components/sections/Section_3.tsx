@@ -16,7 +16,7 @@ export default function Section_3() {
   }, []);
 
   return (
-    <section className="flex w-full flex-col items-center px-[16px] py-[25px] sm:px-[120px] sm:py-[100px]">
+    <section className="flex w-full flex-col items-center overflow-x-hidden px-[16px] py-[25px] sm:px-[120px] sm:py-[100px]">
       <div className="flex w-full max-w-[1200px] flex-col items-center">
         <h2 className="text-on-bg-a-9 sm:text-on-bg-a-3 sm:text-pc-20sb-body text-mobile-28b-emphasis-title mt-[25px] self-start sm:self-center">
           에이고 효과
