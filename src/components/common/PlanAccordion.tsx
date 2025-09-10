@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function PlanAccordion({
   title,
@@ -30,6 +30,11 @@ export default function PlanAccordion({
     Record<number, boolean>
   >({});
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 640px)");
+    setIsExpanded(mediaQuery.matches);
+  }, []);
+
   const toggleExpanded = () => {
     setIsExpanded((prev) => !prev);
   };
@@ -41,9 +46,18 @@ export default function PlanAccordion({
     }));
   };
 
+  // Check if any section is opened
+  const anySectionExpanded = Object.values(expandedSections).some(Boolean);
+
   return (
     <div
-      className={`rounded-2xl border border-gray-100 bg-white p-[16px] shadow-sm`}
+      className={`flex w-full flex-col self-start rounded-2xl border border-gray-100 bg-white p-[16px] shadow-sm ${
+        isExpanded
+          ? anySectionExpanded
+            ? "sm:min-h-[426px]" // allow growth if section is open
+            : "sm:h-[486px]" // fixed height otherwise
+          : "sm:h-auto"
+      }`}
     >
       {/* Header */}
       <div className="mb-4 flex items-start justify-between">
@@ -73,67 +87,120 @@ export default function PlanAccordion({
         {description}
       </p>
       {/* Sections */}
-      {isExpanded && (
-        <div className="mt-[24px] space-y-3 p-[10px]">
-          {sections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="border-gray-100 last:border-b-0">
-              <button
-                onClick={() => toggleSection(sectionIndex)}
-                className="flex w-full items-center justify-between py-2 text-left hover:cursor-pointer"
+      <div className="flex-1">
+        {isExpanded && (
+          <div className="mt-[24px] space-y-3 p-[10px]">
+            {sections.map((section, sectionIndex) => (
+              <div
+                key={sectionIndex}
+                className="border-gray-100 last:border-b-0"
               >
-                <span className="text-mobile-16sb-body text-on-surface-b-1">
-                  {section.title}
-                </span>
-                <span className="text-xl text-gray-400">
-                  {expandedSections[sectionIndex] ? (
-                    <img src="/images/chevron_arrow_up.svg" />
-                  ) : (
-                    <img src="/images/chevron_arrow_down.svg" />
-                  )}
-                </span>
-              </button>
-              {expandedSections[sectionIndex] && (
-                <div className="space-y-[4px]">
-                  {section.items.map((item, itemIndex) => (
-                    <div key={itemIndex} className="pl-4">
-                      <div className="flex w-full items-center text-left">
-                        <span className="text-mobile-14m-subtext text-on-surface-b-5 flex items-center">
-                          <span className="mr-3 h-[3px] w-[3px] rounded-full bg-black" />
-                          {item.title}
-                        </span>
-                      </div>
-                      {item.details && (
-                        <div className="space-y-1 py-2 pl-8">
-                          {item.details.map((detailObj, detailIndex) => (
-                            <div key={detailIndex} className="space-y-1">
-                              <div className="text-xs text-gray-500">
-                                <span className="mr-2">-</span>
-                                <span>{detailObj.detail}</span>
-                              </div>
-                              {detailObj.subdetail && (
-                                <div className="pl-4 text-xs text-gray-400">
-                                  <span className="mr-2">-</span>
-                                  <span>{detailObj.subdetail}</span>
-                                </div>
-                              )}
-                              {detailObj.subsubdetail && (
-                                <div className="pl-8 text-xs text-gray-300">
-                                  <span className="mr-2">-</span>
-                                  <span>{detailObj.subsubdetail}</span>
-                                </div>
-                              )}
+                {sections.length > 1 ? (
+                  <>
+                    <button
+                      onClick={() => toggleSection(sectionIndex)}
+                      className="flex w-full items-center justify-between py-2 text-left hover:cursor-pointer"
+                    >
+                      <span className="text-mobile-16sb-body text-on-surface-b-1">
+                        {section.title}
+                      </span>
+                      <span className="text-xl text-gray-400">
+                        {expandedSections[sectionIndex] ? (
+                          <img src="/images/chevron_arrow_up.svg" />
+                        ) : (
+                          <img src="/images/chevron_arrow_down.svg" />
+                        )}
+                      </span>
+                    </button>
+                    {expandedSections[sectionIndex] && (
+                      <div className="space-y-[4px]">
+                        {section.items.map((item, itemIndex) => (
+                          <div key={itemIndex} className="pl-4">
+                            <div className="flex w-full items-center text-left">
+                              <span className="text-mobile-14m-subtext text-on-surface-b-5 flex items-center">
+                                <span className="mr-3 h-[3px] w-[3px] rounded-full bg-black" />
+                                {item.title}
+                              </span>
                             </div>
-                          ))}
-                        </div>
-                      )}
+                            {item.details && (
+                              <div className="space-y-1 py-2 pl-8">
+                                {item.details.map((detailObj, detailIndex) => (
+                                  <div key={detailIndex} className="space-y-1">
+                                    <div className="text-xs text-gray-500">
+                                      <span className="mr-2">-</span>
+                                      <span>{detailObj.detail}</span>
+                                    </div>
+                                    {detailObj.subdetail && (
+                                      <div className="pl-4 text-xs text-gray-400">
+                                        <span className="mr-2">-</span>
+                                        <span>{detailObj.subdetail}</span>
+                                      </div>
+                                    )}
+                                    {detailObj.subsubdetail && (
+                                      <div className="pl-8 text-xs text-gray-300">
+                                        <span className="mr-2">-</span>
+                                        <span>{detailObj.subsubdetail}</span>
+                                      </div>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    <div className="py-2">
+                      <span className="text-mobile-16sb-body text-on-surface-b-1">
+                        {section.title}
+                      </span>
                     </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      )}
+                    <div className="space-y-[4px]">
+                      {section.items.map((item, itemIndex) => (
+                        <div key={itemIndex} className="pl-4">
+                          <div className="flex w-full items-center text-left">
+                            <span className="text-mobile-14m-subtext text-on-surface-b-5 flex items-center">
+                              <span className="mr-3 h-[3px] w-[3px] rounded-full bg-black" />
+                              {item.title}
+                            </span>
+                          </div>
+                          {item.details && (
+                            <div className="space-y-1 py-2 pl-8">
+                              {item.details.map((detailObj, detailIndex) => (
+                                <div key={detailIndex} className="space-y-1">
+                                  <div className="text-xs text-gray-500">
+                                    <span className="mr-2">-</span>
+                                    <span>{detailObj.detail}</span>
+                                  </div>
+                                  {detailObj.subdetail && (
+                                    <div className="pl-4 text-xs text-gray-400">
+                                      <span className="mr-2">-</span>
+                                      <span>{detailObj.subdetail}</span>
+                                    </div>
+                                  )}
+                                  {detailObj.subsubdetail && (
+                                    <div className="pl-8 text-xs text-gray-300">
+                                      <span className="mr-2">-</span>
+                                      <span>{detailObj.subsubdetail}</span>
+                                    </div>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
       {/* Details button */}
       <div className="border-gray-100 pt-4">
         <button
