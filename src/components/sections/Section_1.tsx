@@ -87,7 +87,7 @@ export default function Section_1() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex h-[675px] w-full flex-col items-center overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] sm:h-[calc(100svh-66px)]"
+      className="relative flex h-[675px] w-full flex-col items-center overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] sm:h-[920px]"
     >
       {/* Blob hover effect */}
       {isMouseInSection && (
@@ -129,7 +129,7 @@ export default function Section_1() {
       </p>
       <Button
         onClick={() => {}}
-        customStyle={`gap-2 text-on-btn-a bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] px-[62px] py-[14px] rounded-[16px] mt-[12px] transition-all duration-2000 ease-out ${
+        customStyle={`gap-2 text-on-btn-a bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] px-[62px] py-[14px] rounded-[16px] mt-[12px] transition-all duration-2000 ease-out z-10 ${
           animationStage >= 4
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-8"
@@ -151,7 +151,7 @@ export default function Section_1() {
           <div className="flex items-center">
             <img
               src="/images/icon_ai_fill.svg"
-              className="mr-2 h-[17.55px] w-[17.55px]"
+              className="z-0 mr-2 h-[17.55px] w-[17.55px]"
             />
             <p className="text-pc-16r-subtext font-semibold text-[#2A2B2B]">
               기본 공통
@@ -305,3 +305,5 @@ export default function Section_1() {
     </section>
   );
 }
+
+// sm:h-[calc(100svh-66px)]
