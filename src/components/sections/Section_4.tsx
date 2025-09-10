@@ -37,9 +37,18 @@ export default function Section_4() {
           ))}
         </div>
         {/* Mobile Graphic */}
-        {selectedOption === 0 && <img src="/images/graphic_1.svg" />}
-        {selectedOption === 1 && <img src="/images/graphic_2.svg" />}
-        {selectedOption === 2 && <img src="/images/graphic_3.svg" />}
+        <img
+          src="/images/graphic_1.svg"
+          className={`${selectedOption === 0 ? "block" : "hidden"}`}
+        />
+        <img
+          src="/images/graphic_2.svg"
+          className={`${selectedOption === 1 ? "block" : "hidden"}`}
+        />
+        <img
+          src="/images/graphic_3.svg"
+          className={`${selectedOption === 2 ? "block" : "hidden"}`}
+        />
         <div className="mt-[12px] mb-[12px] flex flex-row justify-center">
           {rowTwo.map((option) => (
             <GridCard
@@ -52,9 +61,18 @@ export default function Section_4() {
           ))}
         </div>
         {/* Mobile Graphic */}
-        {selectedOption === 3 && <img src="/images/graphic_4.svg" />}
-        {selectedOption === 4 && <img src="/images/graphic_5.svg" />}
-        {selectedOption === 5 && <img src="/images/graphic_6.svg" />}
+        <img
+          src="/images/graphic_4.svg"
+          className={`${selectedOption === 3 ? "block" : "hidden"}`}
+        />
+        <img
+          src="/images/graphic_5.svg"
+          className={`${selectedOption === 4 ? "block" : "hidden"}`}
+        />
+        <img
+          src="/images/graphic_6.svg"
+          className={`${selectedOption === 5 ? "block" : "hidden"}`}
+        />
         <div className="mt-[12px] mb-[12px] flex flex-row justify-center">
           {rowThree.map((option) => (
             <GridCard
@@ -67,9 +85,18 @@ export default function Section_4() {
           ))}
         </div>
         {/* Mobile Graphic */}
-        {selectedOption === 6 && <img src="/images/graphic_7.svg" />}
-        {selectedOption === 7 && <img src="/images/graphic_8.svg" />}
-        {selectedOption === 8 && <img src="/images/graphic_9.svg" />}
+        <img
+          src="/images/graphic_4.svg"
+          className={`${selectedOption === 6 ? "block" : "hidden"}`}
+        />
+        <img
+          src="/images/graphic_5.svg"
+          className={`${selectedOption === 7 ? "block" : "hidden"}`}
+        />
+        <img
+          src="/images/graphic_6.svg"
+          className={`${selectedOption === 8 ? "block" : "hidden"}`}
+        />
       </div>
     </section>
   );
