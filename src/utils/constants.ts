@@ -170,7 +170,7 @@ export const planDetails = [
   },
   {
     title: "직원지원 챗봇",
-    subtitle: "월 10만원",
+    subtitle: "별도문의",
     badge: "직원 PRO",
     description:
       "우리 회사 견적 단가 노출이 우려스럽다면, 직원용 PRO로 해결하세요",

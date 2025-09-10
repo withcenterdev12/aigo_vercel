@@ -1,6 +1,6 @@
 export default function Section_5() {
   return (
-    <section className="flex w-full flex-col items-center bg-amber-50 px-[16px] pt-[50px] pb-[25px] sm:bg-gradient-to-b sm:from-[#FFFFFF] sm:to-[#ECEFFE] sm:py-[100px]">
+    <section className="flex w-full flex-col items-center px-[16px] pt-[50px] pb-[25px] sm:bg-gradient-to-b sm:from-[#FFFFFF] sm:to-[#ECEFFE] sm:py-[100px]">
       <div className="flex w-full max-w-[960px] flex-col">
         <h2 className="text-mobile-28b-emphasis-title sm:text-center">
           <span className="text-on-bg-a-4 sm:text-pc-20sb-body sm:text-on-bg-e-4">
