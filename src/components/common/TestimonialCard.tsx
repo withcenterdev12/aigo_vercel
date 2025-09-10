@@ -25,7 +25,7 @@ export default function TestimonialCard({
     });
   };
   return (
-    <div className="bg-surface-a rounded-[12px] px-[12px] py-[16px]">
+    <div className="bg-surface-a rounded-[12px] px-[12px] py-[16px] sm:px-[20px] sm:py-[20px]">
       <div className="mb-1 flex">
         {[...Array(5)].map((_, index) => (
           <img
@@ -44,7 +44,7 @@ export default function TestimonialCard({
           {title}
         </p>
       </div>
-      <p className="text-on-surface-a-6 text-mobile-14m-subtext">
+      <p className="text-on-surface-a-6 text-mobile-14m-subtext sm:text-pc-16r-subtext sm:tracking-tight">
         "{renderContentWithPurpleText(content)}"
       </p>
     </div>
