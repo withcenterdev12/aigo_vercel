@@ -310,38 +310,47 @@ export const planDetails = [
 
 export const gridOptions = [
   {
+    index: 0,
     image: "/images/option_1.svg",
     label: ["누적", "가입고객수"],
   },
   {
+    index: 1,
     image: "/images/option_2.svg",
     label: ["방문자 수"],
   },
   {
+    index: 2,
     image: "/images/option_3.svg",
     label: ["방문 유형"],
   },
   {
+    index: 3,
     image: "/images/option_4.svg",
     label: ["견적 문의", "요청"],
   },
   {
+    index: 4,
     image: "/images/option_5.svg",
     label: ["견적 문의", "요청 대상"],
   },
   {
+    index: 5,
     image: "/images/option_6.svg",
     label: ["AI 답변", "확인 필요"],
   },
   {
+    index: 6,
     image: "/images/option_7.svg",
     label: ["견적 PDF", "다운로드"],
   },
   {
+    index: 7,
     image: "/images/option_8.svg",
     label: ["견적 다운로드", "TOP 5"],
   },
   {
+    index: 8,
     image: "/images/option_9.svg",
     label: ["자주 접속", "TOP 5"],
   },
