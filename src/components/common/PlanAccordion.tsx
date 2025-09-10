@@ -6,6 +6,7 @@ export default function PlanAccordion({
   badge,
   description,
   sections,
+  index,
 }: Readonly<{
   title: string;
   subtitle: string;
@@ -22,6 +23,7 @@ export default function PlanAccordion({
       }>;
     }>;
   }>;
+  index: number;
 }>) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [expandedSections, setExpandedSections] = useState<
@@ -57,10 +59,14 @@ export default function PlanAccordion({
         <p className="text-mobile-28b-emphasis-title text-on-surface-b-1">
           {subtitle}
         </p>
-        <p className="text-mobile-14m-subtext text-on-surface-b-1">구독</p>
-        <p className="text-mobile-14m-subtext text-on-surface-b-4">
-          (VAT 별도)
-        </p>
+        {index !== 2 && (
+          <>
+            <p className="text-mobile-14m-subtext text-on-surface-b-1">구독</p>
+            <p className="text-mobile-14m-subtext text-on-surface-b-4">
+              (VAT 별도)
+            </p>
+          </>
+        )}
       </div>
       {/* Description */}
       <p className="text-mobile-14m-subtext text-on-surface-b-1">

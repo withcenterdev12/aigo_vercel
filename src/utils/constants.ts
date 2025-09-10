@@ -163,4 +163,142 @@ export const planDetails = [
       },
     ],
   },
+  {
+    title: "직원지원 챗봇",
+    subtitle: "월 10만원",
+    badge: "직원 PRO",
+    description:
+      "우리 회사 견적 단가 노출이 우려스럽다면, 직원용 PRO로 해결하세요",
+    sections: [
+      {
+        title: "사용료 상세 (VAT 별도)",
+        items: [
+          { title: "1회성 기술지원료 300만원" },
+          { title: "에이고 사용료 월 10만원 구독" },
+          {
+            title: "AI 엔진 사용료 종량제 (고객사 부담)",
+            details: [
+              {
+                detail: "구글 Vertex AI 신용카드 등록 및 결제",
+              },
+              {
+                detail: "AI 채팅 1회당 평균 10~20원 소요",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: "1회성 기술지원",
+        items: [
+          { title: "고객사 견적표 양식 지원(1.5주)" },
+          { title: "AI 맞춤 프롬프트 지원(1.5주)" },
+        ],
+      },
+      {
+        title: "직원상담 기본기능",
+        items: [
+          {
+            title: "자연어 기반 상담",
+            details: [
+              {
+                detail: "첨부 파일 및 URL 인식 제공",
+              },
+            ],
+          },
+          {
+            title: "견적 보안기능",
+            details: [
+              {
+                detail: "견적서 패스워드 설정 (숫자 6자리)",
+              },
+              {
+                detail: "지정기간 열람기능 (2주간 견적 유효)",
+              },
+            ],
+          },
+          {
+            title: "견적서 발행",
+            details: [
+              {
+                detail: "PDF 견적 다운로드",
+              },
+              {
+                detail: "엑셀 견적 다운로드 (수정용이)",
+              },
+              {
+                detail: "견적 대화 공유, 파일 공유",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: "관리자 기능",
+        items: [
+          { title: "대시보드" },
+          {
+            title: "계정 관리",
+            details: [{ detail: "관리자 계정 관리" }],
+          },
+          {
+            title: "AI 데이터 관리",
+            details: [
+              {
+                detail: "AI프롬프트 관리 (수정가능)",
+              },
+              {
+                detail: "AI 대화이력 관리 (챗봇 대화내용 열람가능)",
+              },
+            ],
+          },
+          {
+            title: "AI 설정",
+            details: [
+              {
+                detail: "견적서 내 회사정보 설정",
+              },
+              {
+                detail: "직원 AI 채팅 횟수 설정",
+              },
+              {
+                detail: "월 총사용(횟수) 채팅 설정",
+              },
+              {
+                detail: "AI추론 능력 설정 ( 0~100% )",
+              },
+              {
+                detail: "컬러 테마 설정 ( 다크모드 , 라이트 모드)",
+              },
+            ],
+          },
+          {
+            title: "고객 데이터 관리",
+            details: [
+              {
+                detail: "단가표 관리",
+                subdetail: "(회사 단가정보 추가,수정,삭제 가능)",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "고객사 맞춤 개발",
+    subtitle: "3천만원+α",
+    badge: "CUSTOM",
+    description: "우리 회사에 필요한 맞춤 기능 개발",
+    sections: [
+      {
+        title: "커스텀 구축 (별도 문의필요)",
+        items: [
+          { title: "독립형 서비스 구축" },
+          { title: "ERP, MES, WMS 연계 지원 가능" },
+          { title: "기타 시스템 연계 or SSO 연계 등" },
+        ],
+      },
+    ],
+  },
 ];

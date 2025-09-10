@@ -13,8 +13,10 @@ export default function Section_10() {
           이런 분들께 <span className="sm:text-on-surface-a-1">추천</span>
           드립니다
         </h2>
-        <div className="mt-[60px] flex w-full flex-col">
-          <PlanAccordion {...planDetails[0]} />
+        <div className="mt-[60px] flex w-full flex-col gap-[24px]">
+          {planDetails.map((plan, index) => (
+            <PlanAccordion {...plan} index={index} />
+          ))}
         </div>
       </div>
     </section>
