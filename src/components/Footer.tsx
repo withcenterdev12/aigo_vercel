@@ -19,7 +19,7 @@ export default function Footer() {
               <span>대표자명 강태원</span>
               <span className="ml-3">사업자 등록번호 289-86-03278</span>
             </p>
-            <p>
+            <p className="tracking-tighter">
               사업장 주소 경기 성남시 수정고 대왕판교로 815, 기업지원허브 777호
             </p>
             <p>통신판매업신고증 2025-성남 수정-0138호</p>
@@ -39,5 +39,3 @@ export default function Footer() {
     </footer>
   );
 }
-// 개인정보취급방침
-// 이용약관 개인정보취급방침
