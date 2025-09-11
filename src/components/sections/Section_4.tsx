@@ -14,7 +14,10 @@ export default function Section_4() {
   const rowThree = gridOptions.slice(6, 9);
 
   return (
-    <section className="bg-bg-c flex w-full flex-col items-center overflow-x-hidden py-[25px] sm:bg-white sm:px-[120px] sm:py-[100px]">
+    <section
+      id="report"
+      className="bg-bg-c flex w-full flex-col items-center overflow-x-hidden py-[25px] sm:bg-white sm:px-[120px] sm:py-[100px]"
+    >
       <div className="sm:bg-surface-a rounded-[20px] sm:w-[960px] sm:p-[40px]">
         <h2 className="text-mobile-14m-subtext text-bg-c-5 text-center">
           비즈니스 맞춤 분석 <br />
