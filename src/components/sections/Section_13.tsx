@@ -121,8 +121,6 @@ export default function Section_13() {
         memo: "",
       });
       setIsToggled(false);
-
-      alert("문의가 성공적으로 전송되었습니다!");
     } catch (error) {
       console.error("Form submission error:", error);
       alert("문의 전송 중 오류가 발생했습니다. 다시 시도해주세요.");

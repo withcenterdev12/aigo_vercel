@@ -23,7 +23,13 @@ export default function Footer() {
               사업장 주소 경기 성남시 수정고 대왕판교로 815, 기업지원허브 777호
             </p>
             <p>통신판매업신고증 2025-성남 수정-0138호</p>
-            <p>고객센터 031-8039-7981</p>
+            <p
+              className="block sm:hidden"
+              onClick={() => (window.location.href = "tel: 031-8039-7981")}
+            >
+              고객센터 031-8039-7981
+            </p>
+            <p className="hidden sm:block">고객센터 031-8039-7981</p>
             <p className="mt-[12px]">
               Copyright ⓒ 2025 여기닷 All right reserved.
             </p>

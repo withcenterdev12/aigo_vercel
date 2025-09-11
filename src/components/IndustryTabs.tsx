@@ -21,12 +21,20 @@ export default function IndustryTabs({
       <div className="mt-[12px] flex w-full flex-row justify-center gap-[8px] sm:gap-[20px]">
         {industryOptions.map((option) => (
           <Button
+            key={option.number}
             onClick={() => {
               setSelectedOption(option.number);
+
+              if (roundedSide !== "up") {
+                const section = document.getElementById("scenario");
+                section?.scrollIntoView({ behavior: "smooth" });
+                window.history.pushState(null, "", "/scenario");
+              }
             }}
             customStyle={`
-              text-mobile-15m-btn sm:text-pc-16r-subtexthover:cursor-pointer rounded-[20px] sm:rounded-[30px] sm:px-[16px] py-[8px] sm:py-[10px] px-[12px] sm:h-[44px]
-              ${selectedOption === option.number ? "border-bg-tag-1 bg-tag-1 text-on-tag-1" : "border-tag-1 text-tag-1 border-1"}`}
+    text-mobile-15m-btn sm:text-pc-16r-subtexthover:cursor-pointer rounded-[20px] sm:rounded-[30px] sm:px-[16px] py-[8px] sm:py-[10px] px-[12px] sm:h-[44px]
+    ${selectedOption === option.number ? "border-bg-tag-1 bg-tag-1 text-on-tag-1" : "border-tag-1 text-tag-1 border-1"}
+  `}
           >
             {option.label}
           </Button>
