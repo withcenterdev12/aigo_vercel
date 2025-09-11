@@ -129,7 +129,7 @@ export default function Section_1() {
       </p>
       <Button
         onClick={() => {}}
-        customStyle={`gap-2 text-on-btn-a bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] px-[62px] py-[14px] rounded-[16px] mt-[12px] transition-all duration-2000 ease-out z-10 ${
+        customStyle={`gap-2 text-on-btn-a bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] px-[62px] py-[14px] sm:px-[42px] rounded-[16px] mt-[12px] transition-all duration-2000 ease-out z-10 sm:text-pc-20m-btn ${
           animationStage >= 4
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-8"

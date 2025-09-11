@@ -12,7 +12,7 @@ export default function GridCard({
   return (
     <div
       onClick={onClick}
-      className={`flex h-[92px] w-[104px] cursor-pointer flex-col items-center justify-center gap-3 rounded-xl transition-all duration-200 ${
+      className={`flex h-[92px] w-[104px] cursor-pointer flex-col items-center justify-center gap-3 rounded-xl transition-all duration-200 sm:w-[120px] ${
         isActive ? "bg-white" : ""
       } `}
     >
