@@ -33,6 +33,8 @@ export default function Section_13() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const [isToggled, setIsToggled] = useState(false);
+
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
 
@@ -260,36 +262,26 @@ export default function Section_13() {
               )}
             </div>
           </div>
-
-          {/* <div className="mt-[26px] flex items-start space-x-3">
-            <input
-              type="checkbox"
-              id="privacy"
-              name="privacy"
-              checked={formData.privacy}
-              onChange={handleInputChange}
-              className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-              required
-            />
-            <div className="flex-1">
-              <label htmlFor="privacy" className="text-sm text-gray-700">
-                개인정보 수집 동의{" "}
-                <button type="button" className="text-blue-600 underline">
-                  전문보기
-                </button>
-              </label>
-              {errors.privacy && (
-                <p className="text-on-input-5 text-mobile-14m-subtext mt-2 ml-4">
-                  {errors.privacy}
-                </p>
-              )}
+          <div className="w-ful; flex-rol mt-[26px] flex justify-between">
+            <div className="flex flex-row gap-[8px]">
+              <img
+                src={`/images/${isToggled ? "active" : "default"}_checkbox.svg`}
+                className="hover:cursor-pointer"
+                onClick={() => {
+                  setIsToggled((prev) => !prev);
+                }}
+              />
+              <p className="text-mobile-14m-subtext text-on-bg-e-2">
+                개인정보 수집 동의
+              </p>
             </div>
-          </div> */}
-
-          <p className="text-mobile-14m-subtext text-on-bg-e-2 mt-[26px] text-center">
+            <p className="text-mobile-14m-subtext text-on-bg-e-2 underline underline-offset-4">
+              전문보기
+            </p>
+          </div>
+          <p className="text-mobile-14m-subtext text-on-bg-e-2 mt-[24px] text-center">
             *영업일 기준 24시간 이내 답변드리겠습니다
           </p>
-
           <button
             type="submit"
             disabled={isSubmitting}
