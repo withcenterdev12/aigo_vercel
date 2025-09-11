@@ -8,7 +8,7 @@ export default function Section_6() {
             효율적 견적 관리 도우미
           </span>
         </h2>
-        <div className="mt-[60px] grid gap-[52px] sm:grid-cols-2 sm:gap-[40px] md:gap-[80px]">
+        <div className="mt-[70px] grid gap-[52px] sm:grid-cols-2 sm:gap-[40px] md:gap-[80px]">
           {/* Item 1 */}
           <div className="flex flex-col gap-[11px]">
             <div className="text-mobile-20sb-title2 sm:text-pc-26sb-title flex flex-row items-center">

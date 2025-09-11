@@ -61,7 +61,7 @@ export default function Section_3() {
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               글로벌 확장성
             </h3>
-            <p className="text-mobile-16sb-body mt-[12px] text-white">
+            <p className="text-mobile-16sb-body mt-[12px] tracking-tighter text-white">
               쉬지 않는 에이고로 24시간 응대,
               <br />
               모든 언어와 해당 국가의 환율이 적용된 상담
