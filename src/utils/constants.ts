@@ -82,9 +82,7 @@ export const planDetails = [
             details: [
               {
                 detail: "구글 Vertex AI 신용카드 등록 및 결제",
-              },
-              {
-                detail: "AI 제한 1회당 평균 10~20원 소요",
+                subdetail: "AI 제한 1회당 평균 10~20원 소요",
               },
             ],
           },
@@ -93,7 +91,7 @@ export const planDetails = [
       {
         title: "1회성 기술지원",
         items: [
-          { title: "고객사 전직표 양식 지원(1.5주)" },
+          { title: "고객사 견적표 양식 지원(1.5주)" },
           { title: "AI 맞춤 프롬프트 지원(1.5주)" },
         ],
       },
@@ -174,10 +172,15 @@ export const planDetails = [
           {
             title: "고객 데이터 관리",
             details: [
-              {
-                detail: "단가표 관리",
-                subdetail: "(회사 단가정보 추가,수정,삭제 가능)",
-              },
+              { detail: "단가표 관리\\n(회사 단가정보 추가,수정,삭제 가능)" },
+              { detail: "견적다운로드 관리" },
+              { detail: "견적 상담 요청 관리" },
+            ],
+          },
+          {
+            title: "유입 트레픽 분석",
+            detail: [
+              { detail: "트레픽 분석\\n(기기구분, 접속일시, 방문 통계 등)" },
             ],
           },
         ],
@@ -264,7 +267,6 @@ export const planDetails = [
       {
         title: "관리자 기능",
         items: [
-          { title: "대시보드" },
           {
             title: "계정 관리",
             details: [{ detail: "관리자 계정 관리" }],
@@ -431,3 +433,4 @@ export const marqueeImages = [
   "/images/optivio_logo.svg",
   "/images/heredot_logo.svg",
 ];
+// - 단가표 관리(회사 단가정보 추가,수정,삭제 가능)- 견적다운로드 관리- 견적 상담 요청 관리
