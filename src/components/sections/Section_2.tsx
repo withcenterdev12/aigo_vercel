@@ -1,6 +1,6 @@
 export default function Section_2() {
   return (
-    <section className="flex min-h-[660px] w-full flex-col overflow-hidden px-[16px] sm:min-h-[1220px] sm:w-[990px]">
+    <section className="z-20 flex min-h-[660px] w-full flex-col overflow-hidden px-[16px] sm:min-h-[1220px] sm:w-[990px]">
       {/* Mobile View Section Header */}
       <h2 className="text-mobile-28b-emphasis-title text-on-bg-a-9 mt-[50px] block sm:hidden">
         AI 견적

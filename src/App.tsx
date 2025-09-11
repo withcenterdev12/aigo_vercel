@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Section_3 from "./components/sections/Section_3";
 import Section_1 from "./components/sections/Section_1";
 import Section_2 from "./components/sections/Section_2";
@@ -11,8 +12,8 @@ import Section_5 from "./components/sections/Section_5";
 import Section_10 from "./components/sections/Section_10";
 import Section_11 from "./components/sections/Section_11";
 import Section_13 from "./components/sections/Section_13";
-import Footer from "./components/Footer";
 import Section_12 from "./components/sections/Section_12";
+import MouseEffectWrapper from "./components/MouseEffectWrapper";
 
 function App() {
   return (
