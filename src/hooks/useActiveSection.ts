@@ -1,11 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export const useActiveSection = () => {
-  const [activeSection, setActiveSection] = useState<string>('');
+  const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
-    const sectionIds = ['report', 'video', 'scenario', 'pricing', 'review'];
-    const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+    const sectionIds = [
+      "report",
+      "video",
+      "scenario",
+      "pricing",
+      "review",
+      "contact",
+    ];
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
 
     if (sections.length === 0) return;
 
@@ -15,14 +24,14 @@ export const useActiveSection = () => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           } else {
-            setActiveSection(prev => prev === entry.target.id ? '' : prev);
+            setActiveSection((prev) => (prev === entry.target.id ? "" : prev));
           }
         });
       },
       {
         threshold: 0.3,
-        rootMargin: '-80px 0px -80px 0px'
-      }
+        rootMargin: "-80px 0px -80px 0px",
+      },
     );
 
     sections.forEach((section) => {

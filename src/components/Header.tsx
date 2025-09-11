@@ -41,7 +41,11 @@ export default function Header() {
             서비스 체험
           </Button>
           <Button
-            onClick={() => {}}
+            onClick={() => {
+              const section = document.getElementById("contact");
+              section?.scrollIntoView();
+              window.history.pushState(null, "", "/contact");
+            }}
             customStyle="text-on-btn-a text-mobile-15m-btn bg-[linear-gradient(to_right,#7393FF_0%,#1A1FFF_50%,#1A1FFF_100%)] px-[10px] py-[6px] rounded-[8px]"
           >
             가입문의
