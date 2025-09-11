@@ -13,7 +13,7 @@ import Section_10 from "./components/sections/Section_10";
 import Section_11 from "./components/sections/Section_11";
 import Section_13 from "./components/sections/Section_13";
 import Section_12 from "./components/sections/Section_12";
-import MouseEffectWrapper from "./components/MouseEffectWrapper";
+// import MouseEffectWrapper from "./components/MouseEffectWrapper";
 
 function App() {
   return (
