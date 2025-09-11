@@ -129,7 +129,7 @@ export default function Section_1() {
       </p>
       <Button
         onClick={() => {}}
-        customStyle={`gap-2 text-on-btn-a bg-[linear-gradient(to_right,#7393FF_0%,#1A1FFF_50%,#1A1FFF_100%)] px-[62px] py-[14px] sm:px-[42px] rounded-[16px] mt-[12px] transition-all duration-2000 ease-out z-10 sm:text-pc-20m-btn ${
+        customStyle={`gap-2 text-on-btn-a bg-[linear-gradient(to_right,#7393FF_0%,#1A1FFF_50%,#1A1FFF_100%)] px-[64px] py-[14px] sm:px-[42px] rounded-[16px] mt-[12px] transition-all duration-2000 ease-out z-10 sm:text-pc-20m-btn ${
           animationStage >= 4
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-8"
@@ -228,11 +228,11 @@ export default function Section_1() {
         }`}
       >
         <img
-          src="/images/phone_1.png"
+          src="/images/iphone_16.png"
           alt="Phone Mockup"
-          className="h-[400px] w-[202px] flex-shrink-0 object-contain"
+          className="h-[416px] w-[202px] flex-shrink-0 object-contain"
         />
-        <div className="absolute top-[2.5%] left-[28%] z-20 flex h-[115px] w-[200px] flex-col rounded-[9px] bg-white px-[13.5px] shadow-md">
+        <div className="absolute top-[4%] left-[35%] z-20 flex h-[115px] w-[200px] flex-col rounded-[9px] bg-white px-[13.5px] shadow-md">
           <p className="mt-[13.5px] text-[12px] font-bold">
             프로젝트 기간 설정{" "}
             <span className="text-[10px] font-light">(주 단위)</span>
@@ -261,7 +261,7 @@ export default function Section_1() {
             <p>8주</p>
           </div>
         </div>
-        <div className="absolute top-[43%] -left-[31%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
+        <div className="absolute top-[44%] -left-[30%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
           <div className="flex items-center">
             <img
               src="/images/icon_ai_fill.svg"
@@ -281,7 +281,7 @@ export default function Section_1() {
             className="h-[17.55px] w-[17.55px]"
           />
         </div>
-        <div className="absolute top-[58%] left-[28%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
+        <div className="absolute top-[59%] left-[30%] z-20 flex h-[40px] w-[190px] flex-row items-center justify-around rounded-[9px] bg-white shadow-md">
           <div className="flex items-center">
             <img
               src="/images/icon_user.svg"
