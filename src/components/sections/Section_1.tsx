@@ -85,6 +85,7 @@ export default function Section_1() {
 
   return (
     <section
+      id="home"
       ref={sectionRef}
       className="relative flex h-[675px] w-full flex-col items-center overflow-hidden bg-gradient-to-b from-[#FFFFFF] to-[#ECEFFE] sm:h-[920px]"
     >

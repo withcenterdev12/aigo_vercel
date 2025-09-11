@@ -12,6 +12,7 @@ import Section_10 from "./components/sections/Section_10";
 import Section_11 from "./components/sections/Section_11";
 import Section_13 from "./components/sections/Section_13";
 import Footer from "./components/Footer";
+import Section_12 from "./components/sections/Section_12";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Section_9 />
       <Section_10 />
       <Section_11 />
+      <Section_12 />
       <Section_13 />
       <Footer />
     </main>

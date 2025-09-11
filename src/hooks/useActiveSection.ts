@@ -5,6 +5,7 @@ export const useActiveSection = () => {
 
   useEffect(() => {
     const sectionIds = [
+      "home",
       "report",
       "video",
       "scenario",
@@ -12,6 +13,7 @@ export const useActiveSection = () => {
       "review",
       "contact",
     ];
+
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter(Boolean);
@@ -23,6 +25,7 @@ export const useActiveSection = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
+            window.history.replaceState(null, "", `/${entry.target.id}`);
           } else {
             setActiveSection((prev) => (prev === entry.target.id ? "" : prev));
           }
