@@ -1,23 +1,48 @@
 export const navigationBarItems = [
   {
     label: "비즈니스 맞춤분석",
-    href: "#report",
+    path: "/report",
+    onclick: () => {
+      const section = document.getElementById("report");
+      section?.scrollIntoView();
+      window.history.pushState(null, "", "/report");
+    },
   },
   {
     label: "효과영상",
-    href: "#video",
+    path: "/video",
+    onclick: () => {
+      const section = document.getElementById("video");
+      section?.scrollIntoView();
+      window.history.pushState(null, "", "/video");
+    },
   },
   {
     label: "시나리오",
-    href: "#scenario",
+    path: "/scenario",
+    onclick: () => {
+      const section = document.getElementById("scenario");
+      section?.scrollIntoView();
+      window.history.pushState(null, "", "/scenario");
+    },
   },
   {
     label: "추천 및 요금",
-    href: "#pricing",
+    path: "/pricing",
+    onclick: () => {
+      const section = document.getElementById("pricing");
+      section?.scrollIntoView();
+      window.history.pushState(null, "", "/pricing");
+    },
   },
   {
     label: "후기 및 FAQ",
-    href: "#review",
+    path: "/review",
+    onclick: () => {
+      const section = document.getElementById("review");
+      section?.scrollIntoView();
+      window.history.pushState(null, "", "/review");
+    },
   },
 ];
 
@@ -42,10 +67,10 @@ export const industryOptions = [
 
 export const planDetails = [
   {
-    title: "직원지원 챗봇",
+    title: "고객상담 챗봇",
     subtitle: "별도문의",
-    badge: "직원 PRO",
-    description: "고객에게 견절을 노출하고, 리드를 확보해보세요",
+    badge: "고객 PRO",
+    description: "고객에게 견적을 노출하고, 리드를 확보해보세요",
     sections: [
       {
         title: "사용료 상세 (VAT 별도)",
@@ -173,7 +198,7 @@ export const planDetails = [
     subtitle: "별도문의",
     badge: "직원 PRO",
     description:
-      "우리 회사 견적 단가 노출이 우려스럽다면, 직원용 PRO로 해결하세요",
+      "우리 회사 견적 단가 노출이 우려스럽다면, \\n직원용 PRO로 해결하세요",
     sections: [
       {
         title: "사용료 상세 (VAT 별도)",
@@ -185,9 +210,7 @@ export const planDetails = [
             details: [
               {
                 detail: "구글 Vertex AI 신용카드 등록 및 결제",
-              },
-              {
-                detail: "AI 채팅 1회당 평균 10~20원 소요",
+                subdetail: "AI 채팅 1회당 평균 10~20원 소요",
               },
             ],
           },
@@ -301,7 +324,10 @@ export const planDetails = [
         items: [
           { title: "독립형 서비스 구축" },
           { title: "ERP, MES, WMS 연계 지원 가능" },
-          { title: "기타 시스템 연계 or SSO 연계 등" },
+          {
+            title: "기타 시스템 연계 or SSO 연계 등",
+            asterisk: "구축형 프로젝트는 코드반출 지원 불가합니다",
+          },
         ],
       },
     ],
@@ -365,9 +391,9 @@ export const testimonials = [
   },
   {
     name: "송",
-    title: "유통시장 부시장",
+    title: "D 유통시장 부시장",
     content:
-      "에이고의 다국어 지원 덕분에 해외 바이어와 {{언어 장벽 없이}} 소통할 수 있었어요. 다양한 국가 고객들의 문의를 {{실시간으로}} 대응하면서 글로벌 시장 진출에 성공했습니다!",
+      "에이고의 다국어 지원 덕분에 해외 바이어와 {{언어 장벽}} 없이 소통할 수 있었어요. 다양한 국가 고객들의 문의를 {{실시간}} 대응하면서 글로벌 시장 진출에 성공했습니다!",
   },
   {
     name: "강",
@@ -383,7 +409,7 @@ export const testimonials = [
   },
   {
     name: "백",
-    title: "A세츠저 임원",
+    title: "A 제조사 임원",
     content:
       "에이고의 AI 기반 데이터 분석과 리포트 기능이 우리 영업과 마케팅 {{전략 최적화}}에 큰 도움이 됐어요. 고객 패턴과 시장 트렌드를 한눈에 파악하며 {{맞춤 대응}}이 가능해졌습니다.",
   },
@@ -393,10 +419,15 @@ export const testimonials = [
     content:
       "정확하고 신뢰할 수 있는 견적으로 {{비용 예측이 훨씬 명확}}해졌어요. 고객과의 상담이 원활해지고 프로젝트 진행도 안정적으로 관리할 수 있어 만족합니다.",
   },
-  {
-    name: "정",
-    title: "기자재 구매 팀장",
-    content:
-      "복잡한 따로 견적을 요청하느라 늘 혼란스러웠는데, 에이고에서 한 번에 정리된 견적을 받아 업무 효율이 발라졌습니다. 실제로 {{30% 이상 시간을 절약}}했어요.",
-  },
+];
+
+export const marqueeImages = [
+  "/images/hybridge_logo.svg",
+  "/images/everitday_logo.svg",
+  "/images/maru_logo.svg",
+  "/images/onbit_logo.svg",
+  "/images/moon_logo.svg",
+  "/images/nurion_logo.svg",
+  "/images/optivio_logo.svg",
+  "/images/heredot_logo.svg",
 ];

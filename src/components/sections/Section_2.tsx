@@ -5,7 +5,7 @@ export default function Section_2() {
       <h2 className="text-mobile-28b-emphasis-title text-on-bg-a-9 mt-[50px] block sm:hidden">
         AI 견적
       </h2>
-      <h2 className="text-mobile-28b-emphasis-title mt-[8px] block bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text tracking-tight text-transparent sm:hidden">
+      <h2 className="text-mobile-28b-emphasis-title mt-[8px] block bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text tracking-tighter text-transparent sm:hidden">
         1:1 상담 분석, <span className="text-on-bg-a-1">빠른</span> 견적{" "}
         <span className="text-on-bg-a-1"> 생성</span>
       </h2>

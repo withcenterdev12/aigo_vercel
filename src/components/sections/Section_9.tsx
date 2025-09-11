@@ -7,9 +7,11 @@ export default function Section_9() {
           <span className="text-on-bg-a-9 sm:text-on-surface-a-5 sm:text-pc-20sb-body">
             추천 대상
           </span>
-          <br />
-          이런 분들께 <span className="sm:text-on-surface-a-1">추천</span>
-          드립니다
+
+          <span className="mt-2 block sm:mt-4">
+            이런 분들께 <span className="sm:text-on-surface-a-1">추천</span>{" "}
+            드립니다
+          </span>
         </h2>
         {/* Card 1 - Mobile */}
         <div className="bg-surface-a mt-[60px] flex h-[108px] w-full flex-row items-center gap-[20px] rounded-[12px] px-[12px] py-[16px] sm:hidden">

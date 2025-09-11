@@ -8,6 +8,13 @@
   font-display: swap;
 }
 
+body {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Custom Typography Classes */
 @utility text-mobile-28b-emphasis-title {
   font-size: var(--font-size-28b-emphasis-title);
@@ -235,7 +242,7 @@
   --font-size-16r-body-light: 16px;
   --line-height-16r-body-light: 18px;
   --letter-spacing-16r-body-light: -0.3%;
-  --font-weight-16r-body-light: 300;
+  --font-weight-16r-body-light: 400;
   
   --font-size-15m-btn: 15px;
   --line-height-15m-btn: 18px;
@@ -348,20 +355,20 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-50% - 32px));
+    transform: translateX(-33.333%);
   }
 }
+
 .animate-scroll-left {
   animation: scroll-left 20s linear infinite;
 }
 
-
 @keyframes scroll-right {
   0% {
-    transform: translateX(0);
+    transform: translateX(-33.333%);
   }
   100% {
-    transform: translateX(50%);
+    transform: translateX(0%);
   }
 }
 

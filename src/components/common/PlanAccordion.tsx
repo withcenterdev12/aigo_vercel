@@ -16,6 +16,7 @@ export default function PlanAccordion({
     title: string;
     items: Array<{
       title: string;
+      asterisk?: string;
       details?: Array<{
         detail: string;
         subdetail?: string;
@@ -25,6 +26,24 @@ export default function PlanAccordion({
   }>;
   index: number;
 }>) {
+  const renderContentWithPurpleText = (text: string) => {
+    const parts = text.split(/(\{\{.*?\}\}|\\n)/);
+    return parts.map((part, index) => {
+      if (part.startsWith("{{") && part.endsWith("}}")) {
+        const purpleText = part.slice(2, -2);
+        return (
+          <span key={index} className="text-on-surface-a-1">
+            {purpleText}
+          </span>
+        );
+      }
+      if (part === "\\n") {
+        return <br key={index} />;
+      }
+      return part;
+    });
+  };
+
   const [isExpanded, setIsExpanded] = useState(false);
   const [expandedSections, setExpandedSections] = useState<
     Record<number, boolean>
@@ -63,7 +82,7 @@ export default function PlanAccordion({
       <div className="mb-4 flex items-start justify-between">
         <h2 className="text-mobile-20sb-title2 text-on-surface-b-2">{title}</h2>
         {badge && (
-          <p className="text-mobile-15m-btn text-on-tag-1 rounded-full bg-blue-600 px-[10px] py-[4px]">
+          <p className="text-mobile-15m-btn text-on-tag-1 rounded-full bg-[#6A2DFA] px-[10px] py-[4px]">
             {badge}
           </p>
         )}
@@ -84,7 +103,7 @@ export default function PlanAccordion({
       </div>
       {/* Description */}
       <p className="text-mobile-14m-subtext text-on-surface-b-1">
-        {description}
+        {renderContentWithPurpleText(description)}
       </p>
       {/* Sections */}
       <div className="flex-1">
@@ -126,24 +145,30 @@ export default function PlanAccordion({
                               <div className="space-y-1 py-2 pl-8">
                                 {item.details.map((detailObj, detailIndex) => (
                                   <div key={detailIndex} className="space-y-1">
-                                    <div className="text-on-surface-a-4 text-xs">
+                                    <div className="text-on-surface-b-4 text-xs">
                                       <span className="mr-2">-</span>
                                       <span>{detailObj.detail}</span>
                                     </div>
                                     {detailObj.subdetail && (
-                                      <div className="pl-4 text-xs text-gray-400">
-                                        <span className="mr-2">-</span>
+                                      <div className="text-on-surface-b-3 text-xs">
+                                        <span className="mr-2">*</span>
                                         <span>{detailObj.subdetail}</span>
                                       </div>
                                     )}
                                     {detailObj.subsubdetail && (
-                                      <div className="pl-8 text-xs text-gray-300">
-                                        <span className="mr-2">-</span>
+                                      <div className="text-mobile-14m-subtext text-on-surface-b-3 pl-4">
+                                        <span className="mr-2">*</span>
                                         <span>{detailObj.subsubdetail}</span>
                                       </div>
                                     )}
                                   </div>
                                 ))}
+                              </div>
+                            )}
+                            {item.asterisk && (
+                              <div className="pt-1 pl-8 text-xs text-gray-400">
+                                <span className="mr-2">*</span>
+                                <span>{item.asterisk}</span>
                               </div>
                             )}
                           </div>
@@ -189,6 +214,12 @@ export default function PlanAccordion({
                                   )}
                                 </div>
                               ))}
+                            </div>
+                          )}
+                          {item.asterisk && (
+                            <div className="text-on-surface-b-3 text-mobile-14m-subtext mt-[2px] -ml-[18px] pt-1 tracking-tight">
+                              <span>*</span>
+                              <span>{item.asterisk}</span>
                             </div>
                           )}
                         </div>

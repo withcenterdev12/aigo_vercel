@@ -15,8 +15,9 @@ export default function Section_8() {
     >
       <div className="flex w-full max-w-[1200px] flex-col items-center">
         <h2 className="text-mobile-28b-emphasis-title text-on-bg-a-1 sm:text-pc-32b-emphasis-title mx-[16px] mb-[60px] self-start sm:mb-[80px] sm:self-center sm:text-center">
-          <span className="text-on-bg-a-4 sm:text-pc-20sb-body">시나리오</span>{" "}
-          <br /> 산업군 별 에이고 활용 예시
+          <span className="text-on-bg-a-4 sm:text-pc-20sb-body">시나리오</span>
+
+          <span className="mt-2 block sm:mt-4">산업군 별 에이고 활용 예시</span>
         </h2>
         <IndustryTabs
           selectedOption={selectedOption}

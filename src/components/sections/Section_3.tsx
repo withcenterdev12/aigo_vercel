@@ -21,7 +21,7 @@ export default function Section_3() {
         <h2 className="text-on-bg-a-9 sm:text-on-bg-a-3 sm:text-pc-20sb-body text-mobile-28b-emphasis-title mt-[25px] self-start sm:self-center">
           에이고 효과
         </h2>
-        <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title self-start bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent sm:self-center">
+        <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title self-start bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent sm:mt-4 sm:self-center">
           AIGO
           <span className="text-on-bg-a-1">만의 차별화된 경쟁력</span>
         </h2>

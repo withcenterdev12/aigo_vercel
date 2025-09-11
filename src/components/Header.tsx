@@ -6,15 +6,19 @@ export default function Header() {
     <header className="sticky top-0 z-50 mx-auto flex h-[46px] w-full flex-row items-center justify-center bg-white px-[16px] sm:h-[66px] sm:px-[60px]">
       <div className="flex w-full max-w-[1200px] flex-row justify-between">
         <div className="flex flex-row items-center gap-[80px]">
-          <img src="/images/header_logo.png" className="h-[20px] w-[68px]" />
+          <img
+            src="/images/header_logo.png"
+            className="h-[20px] w-[68px] hover:cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0 })}
+          />
           <nav className="hidden flex-row gap-[32px] sm:flex">
             {navigationBarItems.map((item) => (
-              <a
-                href={item.href}
+              <p
+                onClick={item.onclick}
                 className="text-mobile-15m-btn text-on-bg-a-3 hover:cursor-pointer"
               >
                 {item.label}
-              </a>
+              </p>
             ))}
           </nav>
         </div>

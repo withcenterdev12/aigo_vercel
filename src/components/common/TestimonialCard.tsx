@@ -24,6 +24,7 @@ export default function TestimonialCard({
       return part;
     });
   };
+
   return (
     <div className="bg-surface-a rounded-[12px] px-[12px] py-[16px] sm:px-[20px] sm:py-[20px]">
       <div className="mb-1 flex">
@@ -40,7 +41,7 @@ export default function TestimonialCard({
         <p className="text-mobile-14m-subtext text-on-surface-a-7">{name}</p>
         <img src="/images/circle.svg" className="inline h-[12px] w-[12px]" />
         <img src="/images/circle.svg" className="inline h-[12px] w-[12px]" />
-        <p className="text-mobile-14m-subtext text-on-surface-a-7 ml-[4px]">
+        <p className="text-mobile-16sb-body text-on-surface-a-7 ml-[4px]">
           {title}
         </p>
       </div>

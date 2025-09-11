@@ -68,7 +68,6 @@ export default function Section_1() {
       const elapsed = Date.now() - startTime;
       const progress = Math.min(elapsed / duration, 1);
 
-      // Eased animation (ease-out)
       const easedProgress = 1 - Math.pow(1 - progress, 3);
       const currentValue = Math.round(
         startValue + (endValue - startValue) * easedProgress,
@@ -107,7 +106,8 @@ export default function Section_1() {
             : "translate-y-8 opacity-0"
         }`}
       >
-        영업시간은 줄고, <br className="block sm:hidden" /> 매출은 느는 마법
+        <span>영업시간은 줄고, </span>
+        <span className="mt-2 block sm:inline">매출은 느는 마법</span>
       </h1>
       <p
         className={`text-on-bg-e-2 text-mobile-16r-body-light sm:text-pc-20sb-body mt-[24px] transition-all duration-2000 ease-out ${

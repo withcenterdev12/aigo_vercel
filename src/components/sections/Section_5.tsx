@@ -6,16 +6,19 @@ export default function Section_5() {
           <span className="text-on-bg-a-4 sm:text-pc-20sb-body sm:text-on-bg-e-4">
             에이고 기능
           </span>
-          <br />
-          에이고{" "}
-          <span className="bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent">
-            견적 기능{" "}
+
+          {/* Second line */}
+          <span className="mt-2 block sm:mt-4">
+            에이고{" "}
+            <span className="bg-gradient-to-r from-[#7393FF] to-[#1A1FFF] bg-clip-text text-transparent">
+              견적 기능
+            </span>{" "}
+            의 핵심
           </span>
-          의 핵심
         </h2>
         <div className="mt-[60px] flex flex-row gap-[20px] overflow-x-auto sm:flex-wrap sm:overflow-visible">
           {/* Card 1 (Top-left, 410x358) */}
-          <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
+          <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:bg-white sm:px-[32px] sm:py-[28px]">
             <img
               src="/images/card_image_1.svg"
               className="h-[190px] w-[264px] self-center object-contain transition-transform duration-300 hover:scale-110"
@@ -31,7 +34,7 @@ export default function Section_5() {
             </div>
           </div>
           {/* Card 2 (Top-right, 530x358) */}
-          <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px] sm:px-[32px] sm:py-[32px]">
+          <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px] sm:bg-white sm:px-[32px] sm:py-[32px]">
             <img
               src="/images/card_image_2.svg"
               className="h-[190px] w-[264px] self-center object-contain transition-transform duration-300 hover:scale-110"
@@ -48,7 +51,7 @@ export default function Section_5() {
             </div>
           </div>
           {/* Card 3 (Bottom-left, 530x358) */}
-          <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px]">
+          <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[530px] sm:bg-white">
             <img
               src="/images/card_image_3.svg"
               className="h-[190px] w-[264px] self-center object-contain transition-transform duration-300 hover:scale-110"
@@ -64,7 +67,7 @@ export default function Section_5() {
             </div>
           </div>
           {/* Card 4 (Bottom-right, 410x358) */}
-          <div className="bg-surface-b relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:px-[32px] sm:py-[28px]">
+          <div className="bg-surface-a relative flex h-[358px] w-[300px] flex-shrink-0 flex-col rounded-[16px] px-[32px] py-[28px] sm:h-[358px] sm:w-[410px] sm:bg-white sm:px-[32px] sm:py-[28px]">
             <img
               src="/images/card_image_4.svg"
               className="h-[190px] w-[264px] self-center object-contain transition-transform duration-300 hover:scale-110"
