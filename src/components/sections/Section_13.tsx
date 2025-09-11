@@ -4,30 +4,27 @@ import { useState } from "react";
 
 interface FormData {
   name: string;
-  company: string;
-  phone: string;
+  companyName: string;
+  cellphone: string;
   email: string;
-  inquiry: string;
-  privacy: boolean;
+  memo: string;
 }
 
 interface FormErrors {
   name?: string;
-  company?: string;
-  phone?: string;
+  companyName?: string;
+  cellphone?: string;
   email?: string;
-  inquiry?: string;
-  privacy?: string;
+  memo?: string;
 }
 
 export default function Section_13() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
-    company: "",
-    phone: "",
+    companyName: "",
+    cellphone: "",
     email: "",
-    inquiry: "",
-    privacy: false,
+    memo: "",
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
@@ -42,31 +39,24 @@ export default function Section_13() {
       newErrors.name = "이름을 입력해주세요.";
     }
 
-    if (!formData.company.trim()) {
-      newErrors.company = "회사명을 입력해주세요.";
+    if (!formData.companyName.trim()) {
+      newErrors.companyName = "회사명을 입력해주세요.";
     }
 
-    if (!formData.phone.trim()) {
-      newErrors.phone = "전화번호를 입력해주세요.";
-    } else if (!/^[0-9-+\s()]+$/.test(formData.phone)) {
-      newErrors.phone = "올바른 전화번호 형식이 아닙니다.";
+    if (!formData.cellphone.trim()) {
+      newErrors.cellphone = "전화번호를 입력해주세요.";
     }
 
     if (!formData.email.trim()) {
       newErrors.email = "이메일 주소를 입력해주세요.";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "올바른 이메일 형식이 아닙니다.";
     }
 
-    if (!formData.inquiry.trim()) {
-      newErrors.inquiry = "문의사항을 입력해주세요.";
-    }
-
-    if (!formData.privacy) {
-      newErrors.privacy = "개인정보 수집에 동의해주세요.";
+    if (!formData.memo.trim()) {
+      newErrors.memo = "문의사항을 입력해주세요.";
     }
 
     setErrors(newErrors);
+
     return Object.keys(newErrors).length === 0;
   };
 
@@ -93,22 +83,44 @@ export default function Section_13() {
     e.preventDefault();
 
     if (!validateForm()) {
+      console.log("Form validation failed", errors);
       return;
     }
 
     setIsSubmitting(true);
 
     try {
-      console.log("Form submitted:", formData);
+      const apiUrl = `${import.meta.env.VITE_API_BASE_URL}/inquiry`;
+      console.log("API URL:", apiUrl);
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          companyName: formData.companyName,
+          email: formData.email,
+          cellphone: formData.cellphone,
+          memo: formData.memo,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log("Form submission successful:", result);
 
       setFormData({
         name: "",
-        company: "",
-        phone: "",
+        companyName: "",
+        cellphone: "",
         email: "",
-        inquiry: "",
-        privacy: false,
+        memo: "",
       });
+      setIsToggled(false);
 
       alert("문의가 성공적으로 전송되었습니다!");
     } catch (error) {
@@ -118,6 +130,7 @@ export default function Section_13() {
       setIsSubmitting(false);
     }
   };
+
   return (
     <section
       id="contact"
@@ -142,6 +155,7 @@ export default function Section_13() {
             </p>
           </div>
           <form
+            id="contact-form"
             className="mt-[60px] flex w-full flex-col sm:mt-[0] sm:flex-[3]"
             onSubmit={handleSubmit}
             noValidate
@@ -180,44 +194,48 @@ export default function Section_13() {
                 </label>
                 <input
                   type="text"
-                  id="company"
-                  name="company"
-                  value={formData.company}
+                  id="companyName"
+                  name="companyName"
+                  value={formData.companyName}
                   onChange={handleInputChange}
                   placeholder="회사명을 입력해주세요."
                   className={`bg-input placeholder:text-on-input-3 w-full rounded-lg border px-4 py-3 transition-colors outline-none ${
-                    errors.company ? "border-on-input-5" : "border-transparent"
+                    errors.companyName
+                      ? "border-on-input-5"
+                      : "border-transparent"
                   }`}
                   required
                 />
-                {errors.company && (
+                {errors.companyName && (
                   <p className="text-on-input-5 text-mobile-14m-subtext mt-2 ml-4">
-                    {errors.company}
+                    {errors.companyName}
                   </p>
                 )}
               </div>
               <div>
                 <label
-                  htmlFor="phone"
+                  htmlFor="cellphone"
                   className="text-mobile-16sb-body text-on-bg-e-1 mb-2 block"
                 >
                   전화번호
                 </label>
                 <input
                   type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
+                  id="cellphone"
+                  name="cellphone"
+                  value={formData.cellphone}
                   onChange={handleInputChange}
                   placeholder="전화번호를 입력해주세요."
                   className={`bg-input placeholder:text-on-input-3 w-full rounded-lg border px-4 py-3 transition-colors outline-none ${
-                    errors.phone ? "border-on-input-5" : "border-transparent"
+                    errors.cellphone
+                      ? "border-on-input-5"
+                      : "border-transparent"
                   }`}
                   required
                 />
-                {errors.phone && (
+                {errors.cellphone && (
                   <p className="text-on-input-5 text-mobile-14m-subtext mt-2 ml-4">
-                    {errors.phone}
+                    {errors.cellphone}
                   </p>
                 )}
               </div>
@@ -248,31 +266,31 @@ export default function Section_13() {
               </div>
               <div>
                 <label
-                  htmlFor="inquiry"
+                  htmlFor="memo"
                   className="text-mobile-16sb-body text-on-bg-e-1 mb-2 block"
                 >
                   문의사항
                 </label>
                 <textarea
-                  id="inquiry"
-                  name="inquiry"
+                  id="memo"
+                  name="memo"
                   rows={6}
-                  value={formData.inquiry}
+                  value={formData.memo}
                   onChange={handleInputChange}
                   placeholder="문의사항을 적어주세요."
                   className={`bg-input placeholder:text-on-input-3 w-full resize-none rounded-lg border px-4 py-3 transition-colors outline-none ${
-                    errors.inquiry ? "border-on-input-5" : "border-transparent"
+                    errors.memo ? "border-on-input-5" : "border-transparent"
                   }`}
                   required
                 />
-                {errors.inquiry && (
+                {errors.memo && (
                   <p className="text-on-input-5 text-mobile-14m-subtext mt-2 ml-4">
-                    {errors.inquiry}
+                    {errors.memo}
                   </p>
                 )}
               </div>
             </div>
-            <div className="w-ful; flex-rol mt-[26px] flex justify-between">
+            <div className="mt-[26px] flex w-full flex-row justify-between">
               <div className="flex flex-row gap-[8px]">
                 <img
                   src={`/images/${isToggled ? "active" : "default"}_checkbox.svg`}
@@ -296,6 +314,7 @@ export default function Section_13() {
         </p>
         <button
           type="submit"
+          form="contact-form"
           disabled={isSubmitting}
           className={`mt-[8px] w-full rounded-[16px] px-6 py-[12px] font-semibold text-white transition-colors ${
             isSubmitting

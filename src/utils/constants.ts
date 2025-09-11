@@ -76,7 +76,7 @@ export const planDetails = [
         title: "사용료 상세 (VAT 별도)",
         items: [
           { title: "1회성 기술지원료 300만원" },
-          { title: "에이고 사용료 월 10만원 구독" },
+          { title: "에이고 사용료 별도문의" },
           {
             title: "AI 엔진 사용료 종량제 (고객사 부담)",
             details: [
@@ -204,7 +204,7 @@ export const planDetails = [
         title: "사용료 상세 (VAT 별도)",
         items: [
           { title: "1회성 기술지원료 300만원" },
-          { title: "에이고 사용료 월 10만원 구독" },
+          { title: "에이고 사용료 별도문의" },
           {
             title: "AI 엔진 사용료 종량제 (고객사 부담)",
             details: [
