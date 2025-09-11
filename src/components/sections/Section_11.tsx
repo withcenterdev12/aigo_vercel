@@ -21,16 +21,22 @@ export default function Section_11() {
       className="flex w-full flex-col items-center py-[20px] sm:py-[80px]"
     >
       <div className="flex w-full flex-col items-center overflow-hidden">
-        <div className="mb-[60px] flex max-w-[960px] flex-col items-start sm:items-center">
-          <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title sm:self-center sm:text-center">
+        <div className="mb-[60px] flex w-full max-w-[960px] flex-col items-start px-4 sm:items-center">
+          <h2 className="text-mobile-28b-emphasis-title sm:text-pc-32b-emphasis-title text-left sm:text-center">
             <span className="text-on-bg-a-9 sm:text-on-surface-a-5 sm:text-pc-20sb-body">
               고객 후기
             </span>
-            <br />
-            함께 성장하는 <br className="block sm:hidden" />
-            에이고 고객 이야기
+
+            {/* Bottom line */}
+            <span className="mt-2 block sm:mt-4">
+              함께 성장하는{" "}
+              <span className="mt-2 block sm:mt-0 sm:inline">
+                에이고 고객 이야기
+              </span>
+            </span>
           </h2>
         </div>
+
         <div className="overflow-hidden">
           <div className="animate-scroll-left flex w-max gap-[32px]">
             {[...marqueeImages, ...marqueeImages, ...marqueeImages].map(

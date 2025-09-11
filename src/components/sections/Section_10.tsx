@@ -12,8 +12,8 @@ export default function Section_10() {
           <span className="text-on-bg-a-9 sm:text-on-surface-a-5 sm:text-pc-20sb-body">
             맞춤 요금제
           </span>
-          <br />
-          최적의 요금제를 골라보세요
+
+          <span className="mt-2 block sm:mt-4">최적의 요금제를 골라보세요</span>
         </h2>
         <div className="mt-[60px] flex w-full flex-col gap-[24px] sm:flex-row sm:gap-[20px]">
           {planDetails.map((plan, index) => (
