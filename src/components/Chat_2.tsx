@@ -33,7 +33,7 @@ export default function Chat_2() {
             드립니다
           </p>
         </div>
-        <QuoteCard price="30,000,000" />
+        <QuoteCard chat_number={2} price="30,000,000" />
         <InquireCard />
         <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] w-[280px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:w-[506px] sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:px-[16px] sm:py-[16px]">
           <p>
@@ -58,7 +58,7 @@ export default function Chat_2() {
         <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[406px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:px-[16px] sm:py-[16px]">
           <p>요청하신 수량(MOQ) 2만개 기준으로 견적서 안내 드립니다</p>
         </div>
-        <QuoteCard price="50,000,000" />
+        <QuoteCard chat_number={2} price="50,000,000" />
         <InquireCard />
         <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] w-[118px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:px-[16px] sm:py-[16px]">
           <p>감사합니다 :)</p>

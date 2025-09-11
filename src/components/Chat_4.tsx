@@ -85,7 +85,7 @@ export default function Chat_4() {
             (장비당 2,000,000원)
           </p>
         </div>
-        <QuoteCard price="50,000,000" />
+        <QuoteCard chat_number={4} price="50,000,000" />
         <InquireCard />
         <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] h-[34px] w-[112px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight">
           <p>감사합니다 :)</p>
