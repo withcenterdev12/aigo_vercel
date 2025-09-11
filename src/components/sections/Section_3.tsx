@@ -27,7 +27,7 @@ export default function Section_3() {
         </h2>
         <div className="mt-[60px] flex flex-col items-center justify-center gap-[24px] sm:flex-row sm:gap-[18px]">
           {/* Card 1 */}
-          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#627DFE] to-[#4361FF] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#4361FF] to-[#627DFE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               매출 증대
             </h3>
@@ -35,6 +35,42 @@ export default function Section_3() {
               고객 DB 확보, 견적문의 <br />
               최소 2~10배 증가로 매출 증대
             </p>
+            <div className="relative mt-[34px] flex h-[200px] w-full items-center justify-center">
+              <div className="absolute inset-0 z-0">
+                <img
+                  src="/images/bubble_1.svg"
+                  className="bubble-float-1 absolute top-[93%] left-[15%] z-10 h-[29px] w-[113px]"
+                />
+                <img
+                  src="/images/bubble_2.svg"
+                  className="bubble-float-2 absolute top-[34%] left-[70%] h-[30px] w-[80px]"
+                />
+                <img
+                  src="/images/bubble_3.svg"
+                  className="bubble-float-3 absolute top-[80%] left-[65%] z-30 h-[29px] w-[60px]"
+                />
+                <img
+                  src="/images/bubble_4.svg"
+                  className="bubble-float-4 absolute top-[56%] left-[50%] z-20 h-[34px] w-[135px]"
+                />
+                <img
+                  src="/images/bubble_5.svg"
+                  className="bubble-float-5 absolute top-[65%] left-[28%] z-10 h-[40px] w-[111px]"
+                />
+                <img
+                  src="/images/bubble_6.svg"
+                  className="bubble-float-6 absolute top-[22%] left-[22%] h-[28px] w-[112px]"
+                />
+                <img
+                  src="/images/bubble_7.svg"
+                  className="bubble-float-7 absolute top-[30%] left-[8%] h-[28px] w-[94px]"
+                />
+                <img
+                  src="/images/bubble_8.svg"
+                  className="bubble-float-8 absolute top-[54%] left-[2%] h-[38px] w-[97px]"
+                />
+              </div>
+            </div>
           </div>
           {/* Card 2 */}
           <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
