@@ -36,9 +36,22 @@ export default function Section_11() {
             </span>
           </h2>
         </div>
-
-        <div className="overflow-hidden">
+        <div className="hidden overflow-hidden sm:block">
           <div className="animate-scroll-left flex w-max gap-[32px]">
+            {[
+              ...marqueeImages,
+              ...marqueeImages,
+              ...marqueeImages,
+              ...marqueeImages,
+              ...marqueeImages,
+              ...marqueeImages,
+            ].map((src, idx) => (
+              <img key={idx} src={src} className="flex-shrink-0" />
+            ))}
+          </div>
+        </div>
+        <div className="block overflow-hidden sm:hidden">
+          <div className="pc-animate-scroll-left flex w-max gap-[32px]">
             {[...marqueeImages, ...marqueeImages, ...marqueeImages].map(
               (src, idx) => (
                 <img key={idx} src={src} className="flex-shrink-0" />

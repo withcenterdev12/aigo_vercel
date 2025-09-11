@@ -42,7 +42,7 @@ export default function Header() {
           </Button>
           <Button
             onClick={() => {}}
-            customStyle="text-on-btn-a text-mobile-15m-btn bg-[linear-gradient(to_right,#7393FF_0%,#1A1FFF_50%,#1A1FFF_100%)]  px-[10px] py-[6px] rounded-[8px]"
+            customStyle="text-on-btn-a text-mobile-15m-btn bg-[linear-gradient(to_right,#7393FF_0%,#1A1FFF_50%,#1A1FFF_100%)] px-[10px] py-[6px] rounded-[8px]"
           >
             가입문의
           </Button>
