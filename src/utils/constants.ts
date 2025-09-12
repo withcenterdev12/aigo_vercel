@@ -433,4 +433,31 @@ export const marqueeImages = [
   "/images/optivio_logo.svg",
   "/images/heredot_logo.svg",
 ];
-// - 단가표 관리(회사 단가정보 추가,수정,삭제 가능)- 견적다운로드 관리- 견적 상담 요청 관리
+
+export const faqItems = [
+  {
+    id: 1,
+    question: "질문 이런거이런건가요?",
+    answer: "네, 답변답변이 이렇게 나옵니다답변답변이 이렇게 나옵니다",
+  },
+  {
+    id: 2,
+    question: "질문 이런거이런건가요?",
+    answer: "네, 답변답변이 이렇게 나옵니다답변답변이 이렇게 나옵니다",
+  },
+  {
+    id: 3,
+    question: "질문 이런거이런건가요?",
+    answer: "네, 답변답변이 이렇게 나옵니다답변답변이 이렇게 나옵니다",
+  },
+  {
+    id: 4,
+    question: "질문 이런거이런건가요?",
+    answer: "네, 답변답변이 이렇게 나옵니다답변답변이 이렇게 나옵니다",
+  },
+  {
+    id: 5,
+    question: "질문 이런거이런건가요?",
+    answer: "네, 답변답변이 이렇게 나옵니다답변답변이 이렇게 나옵니다",
+  },
+];
