@@ -35,7 +35,9 @@ export default function Header() {
         </div>
         <div className="flex flex-row gap-[12px]">
           <Button
-            onClick={() => {}}
+            onClick={() => {
+              window.open("https://heredotcorp.com/", "_blank");
+            }}
             customStyle="text-on-btn-a-emphasis text-mobile-15m-btn border px-[10px] py-[6px] rounded-[8px] "
           >
             서비스 체험

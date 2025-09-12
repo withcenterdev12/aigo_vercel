@@ -289,13 +289,14 @@ export default function Section_13() {
               </div>
             </div>
             <div className="mt-[26px] flex w-full flex-row justify-between">
-              <div className="flex flex-row gap-[8px]">
+              <div
+                className="flex flex-row gap-[8px] hover:cursor-pointer"
+                onClick={() => {
+                  setIsToggled((prev) => !prev);
+                }}
+              >
                 <img
                   src={`/images/${isToggled ? "active" : "default"}_checkbox.svg`}
-                  className="hover:cursor-pointer"
-                  onClick={() => {
-                    setIsToggled((prev) => !prev);
-                  }}
                 />
                 <p className="text-mobile-14m-subtext text-on-bg-e-2">
                   개인정보 수집 동의
@@ -307,14 +308,14 @@ export default function Section_13() {
             </div>
           </form>
         </div>
-        <p className="text-mobile-14m-subtext text-on-bg-e-2 mt-[24px] text-center sm:mt-[40px]">
+        <p className="text-mobile-14m-subtext text-on-bg-e-2 sm:text-on-bg-e-4 mt-[24px] text-center sm:mt-[40px]">
           *영업일 기준 24시간 이내 답변드리겠습니다
         </p>
         <button
           type="submit"
           form="contact-form"
           disabled={isSubmitting}
-          className={`mt-[8px] w-full rounded-[16px] px-6 py-[12px] font-semibold text-white transition-colors ${
+          className={`mt-[8px] w-full rounded-[16px] px-6 py-[12px] font-semibold text-white transition-colors sm:mt-[20px] ${
             isSubmitting
               ? "cursor-not-allowed bg-gray-400"
               : "bg-[linear-gradient(to_right,#7393FF_0%,#1A1FFF_50%,#1A1FFF_100%)]"

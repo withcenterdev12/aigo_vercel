@@ -4,7 +4,7 @@ import QuoteCard from "./common/QuoteCard";
 
 export default function Chat_1() {
   return (
-    <div className="bg-bg-d mt-[40px] mb-[20px] flex w-full max-w-[960px] flex-col items-center sm:mt-[0px] sm:mb-[0px]">
+    <div className="bg-bg-d mt-[40px] flex w-full max-w-[960px] flex-col items-center sm:mt-[0px] sm:mb-[0px]">
       <div className="text-mobile-16r-body-light bg-bg-d flex w-full flex-col px-[16px] py-[40px] sm:max-w-[720px]">
         <Consultant imagePath="ai_consultant_3" label="강유하" />
         <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[446px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:py-[16px]">
@@ -72,7 +72,7 @@ export default function Chat_1() {
             </span>
           </p>
         </div>
-        <QuoteCard chat_number={1} price="8,000,000" />
+        <QuoteCard chat_number={1} price="25,000,000" />
         <InquireCard />
         <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] w-[276px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:w-[504px] sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:py-[16px]">
           <p>
@@ -87,7 +87,7 @@ export default function Chat_1() {
             드립니다
           </p>
         </div>
-        <QuoteCard chat_number={1} price="8,000,000" />
+        <QuoteCard chat_number={1} price="18,000,000" />
         <InquireCard />
         <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] w-[114px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:py-[16px]">
           <p>감사합니다 :)</p>
