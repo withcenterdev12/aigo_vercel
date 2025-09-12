@@ -2,40 +2,9 @@ import Blob from "./components/Blob";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
+import MainPage from "./components/pages/MainPage";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Section_3 from "./components/sections/Section_3";
-import Section_1 from "./components/sections/Section_1";
-import Section_2 from "./components/sections/Section_2";
-import Section_4 from "./components/sections/Section_4";
-import Section_6 from "./components/sections/Section_6";
-import Section_7 from "./components/sections/Section_7";
-import Section_8 from "./components/sections/Section_8";
-import Section_9 from "./components/sections/Section_9";
-import Section_5 from "./components/sections/Section_5";
-import Section_10 from "./components/sections/Section_10";
-import Section_11 from "./components/sections/Section_11";
-import Section_13 from "./components/sections/Section_13";
-import Section_12 from "./components/sections/Section_12";
-
-function AllSections() {
-  return (
-    <>
-      <Section_1 />
-      <Section_2 />
-      <Section_3 />
-      <Section_4 />
-      <Section_5 />
-      <Section_6 />
-      <Section_7 />
-      <Section_8 />
-      <Section_9 />
-      <Section_10 />
-      <Section_11 />
-      <Section_12 />
-      <Section_13 />
-    </>
-  );
-}
+import CompletedPage from "./components/pages/CompletedPage";
 
 function App() {
   const [active, setActive] = useState(true);
@@ -75,22 +44,30 @@ function App() {
   }, [location]);
 
   return (
-    <main className="relative mx-auto flex flex-col items-center">
-      <Blob active={active} />
-      <Header />
-      <Routes>
-        <Route path="/" element={<AllSections />} />
-        <Route path="/home" element={<AllSections />} />
-        <Route path="/video" element={<AllSections />} />
-        <Route path="/scenario" element={<AllSections />} />
-        <Route path="/pricing" element={<AllSections />} />
-        <Route path="/review" element={<AllSections />} />
-        <Route path="/faq" element={<AllSections />} />
-        <Route path="/contact" element={<AllSections />} />
-        <Route path="/report" element={<AllSections />} />
-      </Routes>
-      <Footer />
-    </main>
+    <Routes>
+      <Route path="/completed" element={<CompletedPage />} />
+      <Route
+        path="*"
+        element={
+          <main className="relative mx-auto flex flex-col items-center">
+            <Blob active={active} />
+            <Header />
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/home" element={<MainPage />} />
+              <Route path="/video" element={<MainPage />} />
+              <Route path="/scenario" element={<MainPage />} />
+              <Route path="/pricing" element={<MainPage />} />
+              <Route path="/review" element={<MainPage />} />
+              <Route path="/faq" element={<MainPage />} />
+              <Route path="/contact" element={<MainPage />} />
+              <Route path="/report" element={<MainPage />} />
+            </Routes>
+            <Footer />
+          </main>
+        }
+      />
+    </Routes>
   );
 }
 
