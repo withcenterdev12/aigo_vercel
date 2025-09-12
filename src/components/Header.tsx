@@ -1,9 +1,12 @@
 import Button from "./common/Button";
 import { navigationBarItems } from "../utils/constants";
 import { useActiveSection } from "../hooks/useActiveSection";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Header() {
   const activeSection = useActiveSection();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <header className="sticky top-0 z-50 mx-auto flex h-[46px] w-full flex-row items-center justify-center bg-white px-[16px] sm:h-[66px] sm:px-[60px]">
@@ -12,7 +15,7 @@ export default function Header() {
           <img
             src="/images/header_logo.png"
             className="h-[20px] w-[68px] hover:cursor-pointer"
-            onClick={() => window.scrollTo({ top: 0 })}
+            onClick={() => navigate("/")}
           />
           <nav className="hidden flex-row gap-[32px] sm:flex">
             {navigationBarItems.map((item) => {
@@ -20,7 +23,7 @@ export default function Header() {
               return (
                 <p
                   key={item.path}
-                  onClick={item.onclick}
+                  onClick={() => navigate(item.path)}
                   className={`text-mobile-15m-btn transition-colors duration-200 hover:cursor-pointer ${
                     isActive
                       ? "text-mobile-15m-btn font-medium"
@@ -43,11 +46,7 @@ export default function Header() {
             서비스 체험
           </Button>
           <Button
-            onClick={() => {
-              const section = document.getElementById("contact");
-              section?.scrollIntoView();
-              window.history.pushState(null, "", "/contact");
-            }}
+            onClick={() => navigate("/contact")}
             customStyle="text-on-btn-a text-mobile-15m-btn bg-[linear-gradient(to_right,#7393FF_0%,#1A1FFF_50%,#1A1FFF_100%)] px-[10px] py-[6px] rounded-[8px]"
           >
             가입문의

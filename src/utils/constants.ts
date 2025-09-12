@@ -2,47 +2,22 @@ export const navigationBarItems = [
   {
     label: "비즈니스 맞춤분석",
     path: "/report",
-    onclick: () => {
-      const section = document.getElementById("report");
-      section?.scrollIntoView();
-      window.history.pushState(null, "", "/report");
-    },
   },
   {
     label: "효과영상",
     path: "/video",
-    onclick: () => {
-      const section = document.getElementById("video");
-      section?.scrollIntoView();
-      window.history.pushState(null, "", "/video");
-    },
   },
   {
     label: "시나리오",
     path: "/scenario",
-    onclick: () => {
-      const section = document.getElementById("scenario");
-      section?.scrollIntoView();
-      window.history.pushState(null, "", "/scenario");
-    },
   },
   {
     label: "추천 및 요금",
     path: "/pricing",
-    onclick: () => {
-      const section = document.getElementById("pricing");
-      section?.scrollIntoView();
-      window.history.pushState(null, "", "/pricing");
-    },
   },
   {
     label: "후기 및 FAQ",
     path: "/review",
-    onclick: () => {
-      const section = document.getElementById("review");
-      section?.scrollIntoView();
-      window.history.pushState(null, "", "/review");
-    },
   },
 ];
 
