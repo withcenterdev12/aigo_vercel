@@ -26,18 +26,11 @@ export default function Blob({ active }: { active: boolean }) {
     return () => window.removeEventListener("mousemove", handleMove);
   }, [colors.length]);
 
-  const getUserAgent = () => {
-    return navigator.userAgent;
+  const isWeb = () => {
+    return !('ontouchstart' in window || navigator.maxTouchPoints > 0);
   };
 
-  const isMobileDevice = () => {
-    const userAgent = getUserAgent();
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      userAgent,
-    );
-  };
-
-  if (!active || isMobileDevice()) return null;
+  if (!active || !isWeb()) return null;
 
   return (
     <div
