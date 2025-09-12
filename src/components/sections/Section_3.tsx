@@ -76,7 +76,7 @@ export default function Section_3() {
         <div className="mt-[60px] flex flex-col items-center justify-center gap-[24px] sm:flex-row sm:gap-[18px]">
           {/* Card 1 - Cycles between floating and loading bubbles */}
           {currentBubbleCard === "floating" ? (
-            <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#4361FF] to-[#627DFE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+            <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#4361FF] to-[#627DFE] px-[26px] sm:w-[250px] sm:rounded-[20px] lg:w-[308px]">
               <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
                 매출 증대
               </h3>
@@ -88,41 +88,41 @@ export default function Section_3() {
                 <div className="absolute inset-0 z-0">
                   <img
                     src="/images/bubble_1.svg"
-                    className="bubble-float-1 absolute top-[93%] left-[15%] z-10 h-[29px] w-[113px]"
+                    className="bubble-float-1 absolute top-[93%] left-[15%] z-10 h-[29px] w-[113px] md:left-[5%] lg:top-[93%] lg:left-[15%]"
                   />
                   <img
                     src="/images/bubble_2.svg"
-                    className="bubble-float-2 absolute top-[34%] left-[70%] h-[30px] w-[80px]"
+                    className="bubble-float-2 absolute top-[34%] left-[70%] h-[30px] w-[80px] md:left-[55%] lg:top-[34%] lg:left-[70%]"
                   />
                   <img
                     src="/images/bubble_3.svg"
-                    className="bubble-float-3 absolute top-[80%] left-[65%] z-30 h-[29px] w-[60px]"
+                    className="bubble-float-3 absolute top-[80%] left-[65%] z-30 h-[29px] w-[60px] md:left-[60%] lg:top-[80%] lg:left-[65%]"
                   />
                   <img
                     src="/images/bubble_4.svg"
-                    className="bubble-float-4 absolute top-[56%] left-[50%] z-20 h-[34px] w-[135px]"
+                    className="bubble-float-4 absolute top-[56%] left-[50%] z-20 h-[34px] w-[135px] md:left-[35%] lg:top-[56%] lg:left-[50%]"
                   />
                   <img
                     src="/images/bubble_5.svg"
-                    className="bubble-float-5 absolute top-[65%] left-[28%] z-10 h-[40px] w-[111px]"
+                    className="bubble-float-5 absolute top-[65%] left-[28%] z-10 h-[40px] w-[111px] md:left-[23%] lg:top-[65%] lg:left-[28%]"
                   />
                   <img
                     src="/images/bubble_6.svg"
-                    className="bubble-float-6 absolute top-[22%] left-[22%] h-[28px] w-[112px]"
+                    className="bubble-float-6 absolute top-[22%] left-[22%] h-[28px] w-[112px] md:left-[17%] lg:top-[22%] lg:left-[22%]"
                   />
                   <img
                     src="/images/bubble_7.svg"
-                    className="bubble-float-7 absolute top-[30%] left-[8%] h-[28px] w-[94px]"
+                    className="bubble-float-7 absolute top-[30%] left-[8%] h-[28px] w-[94px] md:left-[3%] lg:top-[30%] lg:left-[8%]"
                   />
                   <img
                     src="/images/bubble_8.svg"
-                    className="bubble-float-8 absolute top-[54%] left-[2%] h-[38px] w-[97px]"
+                    className="bubble-float-8 absolute top-[54%] left-[2%] h-[38px] w-[97px] md:left-[5%] lg:top-[54%] lg:left-[2%]"
                   />
                 </div>
               </div>
             </div>
           ) : (
-            <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#4361FF] to-[#627DFE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+            <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#4361FF] to-[#627DFE] px-[26px] sm:w-[250px] sm:rounded-[20px] lg:w-[308px]">
               <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
                 매출 증대
               </h3>
@@ -161,7 +161,7 @@ export default function Section_3() {
             </div>
           )}
           {/* Card 2 - Dynamic between Calendar and Circle */}
-          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[250px] sm:rounded-[20px] lg:w-[308px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               업무 효율 증가
             </h3>
@@ -192,9 +192,9 @@ export default function Section_3() {
                 />
                 <img
                   src={`/images/circular_arrow.svg`}
-                  className="absolute top-[-10%] right-[10%] z-10 h-[182px] w-[194.5px]"
+                  className="absolute top-[-10%] right-[10%] z-10 h-[182px] w-[194.5px] md:-right-[2.5%] lg:top-[-10%] lg:right-[10%]"
                 />
-                <div className="absolute top-[17%] right-[36.5%] z-20 flex items-center text-[40px] font-bold text-white">
+                <div className="absolute top-[17%] right-[36.5%] z-20 flex items-center text-[40px] font-bold text-white md:right-[32.5%] lg:top-[17%] lg:right-[36.5%]">
                   <span className="text-[48px]">3</span>
                   <span>분</span>
                 </div>
@@ -202,7 +202,7 @@ export default function Section_3() {
             )}
           </div>
           {/* Card 3 */}
-          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#6F86FF] to-[#A8B7FF] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#6F86FF] to-[#A8B7FF] px-[26px] sm:w-[250px] sm:rounded-[20px] lg:w-[308px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               글로벌 확장성
             </h3>
@@ -233,7 +233,7 @@ export default function Section_3() {
                 {/* ¥ */}
                 <img
                   src="/images/currency_bubble_4.svg"
-                  className="bubble-float-4 absolute top-[73%] left-[55%] h-[37px] w-[37px]"
+                  className="bubble-float-4 absolute top-[73%] left-[55%] z-50 h-[37px] w-[37px]"
                 />
                 {/* Language Bubbles */}
                 {/* こんにちは */}
@@ -269,5 +269,3 @@ export default function Section_3() {
     </section>
   );
 }
-
-// <section className="flex h-[1420px] w-full flex-col items-center px-[16px] sm:h-[760px]">

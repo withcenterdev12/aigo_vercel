@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 mx-auto flex h-[46px] w-full flex-row items-center justify-center bg-white px-[16px] sm:h-[66px] sm:px-[60px]">
       <div className="flex w-full max-w-[1200px] flex-row justify-between">
-        <div className="flex flex-row items-center gap-[80px]">
+        <div className="flex flex-row items-center gap-[40px] lg:gap-[80px]">
           <img
             src="/images/header_logo.png"
             className="h-[20px] w-[68px] hover:cursor-pointer"
