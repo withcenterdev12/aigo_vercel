@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 export default function Section_3() {
   const [calendar, setCalendar] = useState("calendar_1");
   const [currentCard, setCurrentCard] = useState("calendar"); // "calendar" or "circle"
+  const [currentBubbleCard, setCurrentBubbleCard] = useState("loading"); // "floating" or "loading"
 
   useEffect(() => {
     let currentIndex = 0;
@@ -14,7 +15,7 @@ export default function Section_3() {
       if (currentCard === "calendar") {
         currentIndex = (currentIndex + 1) % calendars.length;
         setCalendar(calendars[currentIndex]);
-        
+
         // Count calendar cycles (each complete cycle through all 3 images)
         if (currentIndex === 0) {
           calendarCycles++;
@@ -43,6 +44,25 @@ export default function Section_3() {
     };
   }, [currentCard]);
 
+  useEffect(() => {
+    let loadingCycles = 0;
+
+    // Timer for loading bubbles (4 complete cycles, then switch to floating permanently)
+    const loadingInterval = setInterval(() => {
+      if (currentBubbleCard === "loading") {
+        loadingCycles++;
+        if (loadingCycles >= 5) {
+          setCurrentBubbleCard("floating");
+          clearInterval(loadingInterval); // Stop the interval after switching
+        }
+      }
+    }, 1200); // 1.2s per loading cycle
+
+    return () => {
+      clearInterval(loadingInterval);
+    };
+  }, [currentBubbleCard]);
+
   return (
     <section className="flex w-full flex-col items-center overflow-x-hidden px-[16px] py-[25px] sm:px-[120px] sm:py-[100px]">
       <div className="flex w-full max-w-[1200px] flex-col items-center">
@@ -54,52 +74,92 @@ export default function Section_3() {
           <span className="text-on-bg-a-1">만의 차별화된 경쟁력</span>
         </h2>
         <div className="mt-[60px] flex flex-col items-center justify-center gap-[24px] sm:flex-row sm:gap-[18px]">
-          {/* Card 1 */}
-          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#4361FF] to-[#627DFE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
-            <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
-              매출 증대
-            </h3>
-            <p className="text-mobile-16sb-body mt-[12px] text-white">
-              고객 DB 확보, 견적문의 <br />
-              최소 2~10배 증가로 매출 증대
-            </p>
-            <div className="relative mt-[34px] flex h-[200px] w-full items-center justify-center">
-              <div className="absolute inset-0 z-0">
-                <img
-                  src="/images/bubble_1.svg"
-                  className="bubble-float-1 absolute top-[93%] left-[15%] z-10 h-[29px] w-[113px]"
-                />
-                <img
-                  src="/images/bubble_2.svg"
-                  className="bubble-float-2 absolute top-[34%] left-[70%] h-[30px] w-[80px]"
-                />
-                <img
-                  src="/images/bubble_3.svg"
-                  className="bubble-float-3 absolute top-[80%] left-[65%] z-30 h-[29px] w-[60px]"
-                />
-                <img
-                  src="/images/bubble_4.svg"
-                  className="bubble-float-4 absolute top-[56%] left-[50%] z-20 h-[34px] w-[135px]"
-                />
-                <img
-                  src="/images/bubble_5.svg"
-                  className="bubble-float-5 absolute top-[65%] left-[28%] z-10 h-[40px] w-[111px]"
-                />
-                <img
-                  src="/images/bubble_6.svg"
-                  className="bubble-float-6 absolute top-[22%] left-[22%] h-[28px] w-[112px]"
-                />
-                <img
-                  src="/images/bubble_7.svg"
-                  className="bubble-float-7 absolute top-[30%] left-[8%] h-[28px] w-[94px]"
-                />
-                <img
-                  src="/images/bubble_8.svg"
-                  className="bubble-float-8 absolute top-[54%] left-[2%] h-[38px] w-[97px]"
-                />
+          {/* Card 1 - Cycles between floating and loading bubbles */}
+          {currentBubbleCard === "floating" ? (
+            <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#4361FF] to-[#627DFE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+              <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
+                매출 증대
+              </h3>
+              <p className="text-mobile-16sb-body mt-[12px] text-white">
+                고객 DB 확보, 견적문의 <br />
+                최소 2~10배 증가로 매출 증대
+              </p>
+              <div className="relative mt-[34px] flex h-[200px] w-full items-center justify-center">
+                <div className="absolute inset-0 z-0">
+                  <img
+                    src="/images/bubble_1.svg"
+                    className="bubble-float-1 absolute top-[93%] left-[15%] z-10 h-[29px] w-[113px]"
+                  />
+                  <img
+                    src="/images/bubble_2.svg"
+                    className="bubble-float-2 absolute top-[34%] left-[70%] h-[30px] w-[80px]"
+                  />
+                  <img
+                    src="/images/bubble_3.svg"
+                    className="bubble-float-3 absolute top-[80%] left-[65%] z-30 h-[29px] w-[60px]"
+                  />
+                  <img
+                    src="/images/bubble_4.svg"
+                    className="bubble-float-4 absolute top-[56%] left-[50%] z-20 h-[34px] w-[135px]"
+                  />
+                  <img
+                    src="/images/bubble_5.svg"
+                    className="bubble-float-5 absolute top-[65%] left-[28%] z-10 h-[40px] w-[111px]"
+                  />
+                  <img
+                    src="/images/bubble_6.svg"
+                    className="bubble-float-6 absolute top-[22%] left-[22%] h-[28px] w-[112px]"
+                  />
+                  <img
+                    src="/images/bubble_7.svg"
+                    className="bubble-float-7 absolute top-[30%] left-[8%] h-[28px] w-[94px]"
+                  />
+                  <img
+                    src="/images/bubble_8.svg"
+                    className="bubble-float-8 absolute top-[54%] left-[2%] h-[38px] w-[97px]"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          ) : (
+            <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#4361FF] to-[#627DFE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+              <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
+                매출 증대
+              </h3>
+              <p className="text-mobile-16sb-body mt-[12px] text-white">
+                고객 DB 확보, 견적문의 <br />
+                최소 2~10배 증가로 매출 증대
+              </p>
+              <div className="relative mt-[34px] flex h-[200px] w-full items-center justify-center">
+                <div className="absolute inset-0 z-0">
+                  <img
+                    src="/images/bubble_9.svg"
+                    className="absolute top-[50%] left-[0%] z-10 h-[30px] w-[30px]"
+                  />
+                  <img
+                    src="/images/bubble_10.svg"
+                    className="absolute top-[50%] left-[15%] h-[29.5px] w-[90px]"
+                  />
+                  <img
+                    src="/images/bubble_11.svg"
+                    className="absolute top-[30%] left-[35%] h-[29.5px] w-[150px]"
+                  />
+                  <img
+                    src="/images/loading_bubble_1.svg"
+                    className="loading-bubble-1 absolute top-[82.5%] left-[38%] h-[9px] w-[9px]"
+                  />
+                  <img
+                    src="/images/loading_bubble_2.svg"
+                    className="loading-bubble-2 absolute top-[82.5%] left-[45%] h-[9px] w-[9px]"
+                  />
+                  <img
+                    src="/images/loading_bubble_2.svg"
+                    className="loading-bubble-3 absolute top-[82.5%] left-[52%] h-[9px] w-[9px]"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
           {/* Card 2 - Dynamic between Calendar and Circle */}
           <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
