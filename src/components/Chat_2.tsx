@@ -23,7 +23,7 @@ export default function Chat_2() {
         <div className="text-on-tag-1 bg-tag-1 mt-[8px] w-[300px] rounded-t-[12px] rounded-br-[12px] px-[14px] py-[8px] leading-tight sm:w-[452px] sm:rounded-t-[20px] sm:rounded-br-[20px] sm:px-[16px] sm:py-[16px]">
           <p>미니 선풍기 모델명 A100 구매 수량(MOQ)가 몇 개 정도 이실까요?</p>
         </div>
-        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] w-[250px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:px-[16px] sm:py-[16px]">
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] mb-[20px] w-[254px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:px-[16px] sm:py-[16px]">
           <p>1만대 정도 구매 비용을 알고 싶어요</p>
         </div>
         <Consultant imagePath="ai_consultant_4" label="강유준" />

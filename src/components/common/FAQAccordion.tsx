@@ -22,15 +22,17 @@ const FAQAccordion = ({
       <div className="border-line-1 mb-[24px] border-b">
         <button
           onClick={toggleOpen}
-          className="flex w-full items-center justify-between py-[12px] text-left transition-colors duration-200 hover:bg-gray-50"
+          className="flex w-full items-center justify-between py-[12px] text-left"
           aria-expanded={isOpen}
           type="button"
         >
           <div className="flex items-center">
-            <span className="text-mobile-16sb-body text-on-bg-a-4 mr-4">
+            <span className="text-mobile-16sb-body text-on-bg-a-4 sm:text-pc-20sb-body mr-4">
               {id}
             </span>
-            <h3 className="text-mobile-16sb-body text-on-bg-a-1">{question}</h3>
+            <h3 className="text-mobile-16sb-body text-on-bg-a-1 sm:text-pc-16r-subtext">
+              {question}
+            </h3>
           </div>
           <div className="ml-4 flex-shrink-0">
             <img
@@ -49,7 +51,7 @@ const FAQAccordion = ({
       </div>
       {isOpen && (
         <div className="border-line-1 -mt-[12px] mb-[12px] border-b pb-[12px]">
-          <div className="text-on-surface-a-7 text-mobile-16sb-body bg-surface-a rounded-[12px] p-3">
+          <div className="text-on-surface-a-7 text-mobile-16sb-body bg-surface-a sm:text-pc-16r-subtext rounded-[12px] p-3">
             <p>{answer}</p>
           </div>
         </div>
