@@ -23,7 +23,6 @@ export default function Section_1() {
     });
   }, []);
 
-
   const animateSlider = () => {
     const startValue = 0;
     const endValue = 6;

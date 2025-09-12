@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-bg-b mx-auto flex w-full flex-col items-center px-[16px] pt-[20px] pb-[40px] sm:px-[120px] sm:pt-[40px]">
-      <div className="flex w-full max-w-[1200px] flex-col gap-[40px]">
+    <footer className="bg-bg-b mx-auto flex w-full flex-col items-center px-[16px] pt-[20px] pb-[40px] sm:pt-[40px] lg:px-[120px]">
+      <div className="flex w-full max-w-[960px] flex-col gap-[40px]">
         <div className="flex flex-row items-center gap-[12px]">
           <img src="/images/footer_logo.svg" />
           <p className="text-mobile-14m-subtext text-bg-b-1">
