@@ -102,7 +102,7 @@ export default function PlanAccordion({
         )}
       </div>
       {/* Description */}
-      <p className="text-mobile-14m-subtext text-on-surface-b-1">
+      <p className="text-mobile-14m-subtext text-on-surface-b-1 tracking-normal sm:tracking-tighter lg:tracking-normal">
         {renderContentWithPurpleText(description)}
       </p>
       {/* Sections */}

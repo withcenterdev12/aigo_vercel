@@ -68,7 +68,7 @@ export default function Section_11() {
             )}
           </div>
         </div>
-        <div className="mt-[60px] flex max-w-[960px] flex-col px-[0px] sm:px-[32px] lg:px-[0px]">
+        <div className="mt-[60px] flex max-w-[960px] flex-col px-[0px] sm:px-[16px] lg:px-[0px]">
           <div className="flex flex-col gap-[16px] px-[16px] sm:grid sm:grid-cols-2 sm:gap-[32px] sm:px-[0px]">
             {displayedTestimonials.map((testimonial) => (
               <TestimonialCard {...testimonial} />
