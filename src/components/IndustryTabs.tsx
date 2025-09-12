@@ -13,7 +13,7 @@ export default function IndustryTabs({
 }>) {
   return (
     <div
-      className={`flex h-auto w-full max-w-[960px] flex-col justify-center py-[20px] sm:h-[170px] sm:w-[960px] sm:bg-[#F2EFFF] sm:py-[0px] ${roundedSide === "up" ? "sm:rounded-t-[20px]" : "bg-surface-a sm:rounded-b-[20px]"}`}
+      className={`flex h-auto w-full max-w-[960px] flex-col justify-center py-[20px] sm:h-[170px] sm:max-w-[960px] sm:bg-[#F2EFFF] sm:py-[0px] ${roundedSide === "up" ? "sm:rounded-t-[20px]" : "bg-surface-a sm:rounded-b-[20px]"}`}
     >
       <p className="text-mobile-15m-btn text-on-bg-a-2 sm:font-20sb-body sm:text-on-surface-c-1 self-center">
         상담 이력이 궁금한 산업군을 선택해주세요
