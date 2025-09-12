@@ -16,9 +16,7 @@ import Section_10 from "./components/sections/Section_10";
 import Section_11 from "./components/sections/Section_11";
 import Section_13 from "./components/sections/Section_13";
 import Section_12 from "./components/sections/Section_12";
-// import MouseEffectWrapper from "./components/MouseEffectWrapper";
 
-// Component to render all sections (home page)
 function AllSections() {
   return (
     <>
@@ -80,7 +78,6 @@ function App() {
     <main className="relative mx-auto flex flex-col items-center">
       <Blob active={active} />
       <Header />
-
       <Routes>
         <Route path="/" element={<AllSections />} />
         <Route path="/home" element={<AllSections />} />
@@ -92,7 +89,6 @@ function App() {
         <Route path="/contact" element={<AllSections />} />
         <Route path="/report" element={<AllSections />} />
       </Routes>
-
       <Footer />
     </main>
   );

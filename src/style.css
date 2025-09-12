@@ -388,3 +388,16 @@ body {
 .pc-animate-scroll-left {
   animation: pc-scroll-left 20s linear infinite;
 }
+
+@keyframes spin-counterclockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-spin-counterclockwise {
+  animation: spin-counterclockwise 1.5s ease-out infinite;
+}

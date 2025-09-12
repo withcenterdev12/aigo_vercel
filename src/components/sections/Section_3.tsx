@@ -73,7 +73,7 @@ export default function Section_3() {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+          {/* <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               업무 효율 증가
             </h3>
@@ -91,6 +91,35 @@ export default function Section_3() {
             <p className="text-mobile-12r-tag mt-[10px] text-white">
               *기존 단순 광고 (문의접수 대비)량
             </p>
+          </div> */}
+          {/* */}
+          <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
+            <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
+              업무 효율 증가
+            </h3>
+            <p className="text-mobile-16sb-body mt-[12px] text-white">
+              고객 DB 확보 10배 +<br /> 평균 견적 발행수 3배 +<br /> 웹사이트
+              체류 시간 5배 +<br />
+              영업팀 문의 증가량 3배 +
+            </p>
+            <div className="relative mt-[45px] flex h-full w-full justify-center">
+              <img
+                src={`/images/purple_circle.svg`}
+                className="absolute z-0 h-[140px] w-[140px]"
+              />
+              <img
+                src={`/images/dark_blue_circle.svg`}
+                className="animate-spin-counterclockwise absolute z-10 h-[140px] w-[140px]"
+              />
+              <img
+                src={`/images/circular_arrow.svg`}
+                className="absolute top-[-10%] right-[10%] z-10 h-[182px] w-[194.5px]"
+              />
+              <div className="absolute top-[17%] right-[36.5%] z-20 flex items-center text-[40px] font-bold text-white">
+                <span className="text-[48px]">3</span>
+                <span>분</span>
+              </div>
+            </div>
           </div>
           {/* Card 3 */}
           <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#6F86FF] to-[#A8B7FF] px-[26px] sm:w-[308px] sm:rounded-[20px]">
