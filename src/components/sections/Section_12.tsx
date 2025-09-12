@@ -21,16 +21,13 @@ export default function Section_12() {
         </h2>
         <div className="mt-[60px] w-full sm:mt-[80px]">
           {questions.map(
-            (
-              item: { id: number; question: string; answer: string },
-              index: number,
-            ) => (
+            (item: { id: number; question: string; answer: string }, index: number) => (
               <FAQAccordion
                 key={item.id}
                 id={item.id}
                 question={item.question}
                 answer={item.answer}
-                isFirst={index === 0}
+                initialOpen={index < 3}
               />
             ),
           )}

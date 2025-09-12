@@ -4,14 +4,14 @@ const FAQAccordion = ({
   id,
   question,
   answer,
+  initialOpen = false,
 }: {
   id: number;
   question: string;
   answer: string;
-
-  isFirst?: boolean;
+  initialOpen?: boolean;
 }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(initialOpen);
 
   const toggleOpen = (): void => {
     setIsOpen(!isOpen);
