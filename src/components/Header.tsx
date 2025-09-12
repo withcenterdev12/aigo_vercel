@@ -14,7 +14,7 @@ export default function Header() {
           <img
             src="/images/header_logo.png"
             className="h-[20px] w-[68px] hover:cursor-pointer"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
           />
           <nav className="hidden flex-row gap-[32px] sm:flex sm:gap-[16px] lg:gap-[32px]">
             {navigationBarItems.map((item) => {
