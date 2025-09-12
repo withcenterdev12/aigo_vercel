@@ -87,7 +87,7 @@ export default function Chat_4() {
         </div>
         <QuoteCard chat_number={4} price="50,000,000" />
         <InquireCard />
-        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] h-[34px] w-[112px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight">
+        <div className="bg-tag-2 text-on-tag2 text-on-tag-2 mt-[20px] w-[118px] self-end rounded-t-[12px] rounded-bl-[12px] px-[14px] py-[6px] leading-tight sm:rounded-t-[20px] sm:rounded-bl-[20px] sm:px-[16px] sm:py-[16px]">
           <p>감사합니다 :)</p>
         </div>
       </div>
