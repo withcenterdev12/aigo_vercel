@@ -1,6 +1,5 @@
-"use client";
-
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface FormData {
   name: string;
@@ -19,6 +18,8 @@ interface FormErrors {
 }
 
 export default function Section_13() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     companyName: "",
@@ -87,6 +88,11 @@ export default function Section_13() {
       return;
     }
 
+    if (!isToggled) {
+      alert("개인정보 수집동의를 체크해 주세요.");
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -121,6 +127,7 @@ export default function Section_13() {
         memo: "",
       });
       setIsToggled(false);
+      navigate("/completed");
     } catch (error) {
       console.error("Form submission error:", error);
       alert("문의 전송 중 오류가 발생했습니다. 다시 시도해주세요.");
