@@ -11,7 +11,7 @@ export default function Section_8() {
   return (
     <section
       id="scenario"
-      className="flex h-full w-full flex-col items-center pt-[40px] sm:py-[100px]"
+      className="flex h-full w-full flex-col items-center pt-[40px] lg:py-[100px]"
     >
       <div className="flex w-full max-w-[1200px] flex-col items-center">
         <h2 className="text-mobile-28b-emphasis-title text-on-bg-a-1 sm:text-pc-32b-emphasis-title mx-[16px] mb-[60px] self-start sm:mb-[80px] sm:self-center sm:text-center">

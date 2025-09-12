@@ -21,7 +21,10 @@ export default function Section_12() {
         </h2>
         <div className="mt-[60px] w-full sm:mt-[80px]">
           {questions.map(
-            (item: { id: number; question: string; answer: string }, index: number) => (
+            (
+              item: { id: number; question: string; answer: string },
+              index: number,
+            ) => (
               <FAQAccordion
                 key={item.id}
                 id={item.id}
@@ -36,7 +39,7 @@ export default function Section_12() {
           onClick={() => {
             setIsToggled((prev) => !prev);
           }}
-          className="flex flex-row items-center gap-1 hover:cursor-pointer"
+          className="mt-[16px] flex flex-row items-center gap-1 hover:cursor-pointer sm:mt-[40px]"
         >
           <p className="text-mobile-14m-subtext text-on-surface-b-3">
             {isToggled ? "접기" : "더보기"}

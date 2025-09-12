@@ -2,7 +2,7 @@ export default function Section_7() {
   return (
     <section
       id="video"
-      className="flex w-full flex-col items-center px-[16px] py-[25px] sm:py-[100px]"
+      className="items-centerpx-[16px] flex w-full flex-col py-[25px] sm:py-[80px] lg:py-[100px]"
     >
       <div className="flex flex-col items-center">
         <p className="text-mobile-14m-subtext sm:text-pc-20sb-body text-on-bg-a-2 sm:text-on-bg-a-3">
@@ -13,7 +13,7 @@ export default function Section_7() {
         </h2>
         <img
           src="/images/thumbnail.png"
-          className="mt-[20px] h-[200px] w-full object-cover sm:mt-[80px] sm:h-[600px] sm:w-[960px]"
+          className="mt-[20px] h-[200px] w-full object-cover sm:mt-[80px] sm:h-[450px] sm:w-[720px] lg:h-[600px] lg:w-[960px]"
         />
       </div>
     </section>

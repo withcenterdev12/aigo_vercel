@@ -116,25 +116,25 @@ export default function Section_9() {
           </div>
         </div>
         <div className="mt-[80px] hidden w-full flex-row justify-between px-[40px] sm:flex">
-          <p className="text-pc-26sb-title text-on-surface-a-7">
+          <p className="text-pc-26sb-title sm:text-pc-26sb-title text-on-surface-a-7">
             다양한 상황에 <br /> 맞춰 사용하세요
           </p>
           {/* 1 */}
-          <div className="flex h-[128px] w-[158px] flex-col items-center justify-center rounded-[12px] bg-white">
+          <div className="flex h-[128px] w-[158px] flex-col items-center justify-center rounded-[12px] bg-white sm:h-[120px] sm:w-[150px] lg:h-[128px] lg:w-[158px]">
             <div className="bg-on-surface-b-1 mb-2 flex h-[24px] w-[24px] items-center justify-center rounded-full">
               <span className="text-surface-b text-lg font-bold">1</span>
             </div>
             <p className="text-pc-20sb-body">외부 고객용</p>
           </div>
           {/* 2 */}
-          <div className="flex h-[128px] w-[158px] flex-col items-center justify-center rounded-[12px] bg-white">
+          <div className="flex h-[128px] w-[158px] flex-col items-center justify-center rounded-[12px] bg-white sm:h-[120px] sm:w-[150px] lg:h-[128px] lg:w-[158px]">
             <div className="bg-on-surface-b-1 mb-2 flex h-[24px] w-[24px] items-center justify-center rounded-full">
               <span className="text-surface-b text-lg font-bold">2</span>
             </div>
             <p className="text-pc-20sb-body">내부 직원용</p>
           </div>
           {/* 3 */}
-          <div className="flex h-[128px] w-[158px] flex-col items-center justify-center rounded-[12px] bg-white">
+          <div className="flex h-[128px] w-[158px] flex-col items-center justify-center rounded-[12px] bg-white sm:h-[120px] sm:w-[150px] lg:h-[128px] lg:w-[158px]">
             <div className="bg-on-surface-b-1 mb-2 flex h-[24px] w-[24px] items-center justify-center rounded-full">
               <span className="text-surface-b text-lg font-bold">3</span>
             </div>
@@ -145,7 +145,7 @@ export default function Section_9() {
             </p>
           </div>
           {/* 4 */}
-          <div className="flex h-[128px] w-[158px] flex-col items-center justify-center rounded-[12px] bg-white">
+          <div className="flex h-[128px] w-[158px] flex-col items-center justify-center rounded-[12px] bg-white sm:h-[120px] sm:w-[150px] lg:h-[128px] lg:w-[158px]">
             <div className="bg-on-surface-b-1 mb-2 flex h-[24px] w-[24px] items-center justify-center rounded-full">
               <span className="text-surface-b text-lg font-bold">4</span>
             </div>

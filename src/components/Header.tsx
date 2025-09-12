@@ -25,7 +25,7 @@ export default function Header() {
                   onClick={() => navigate(item.path)}
                   className={`text-mobile-15m-btn lg:text-mobile-15m-btn transition-colors duration-200 hover:cursor-pointer sm:text-[12px] ${
                     isActive
-                      ? "text-mobile-15m-btn font-medium"
+                      ? "text-mobile-15m-btn font-bold"
                       : "text-on-bg-a-3"
                   }`}
                 >
