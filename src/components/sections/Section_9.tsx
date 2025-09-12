@@ -103,7 +103,7 @@ export default function Section_9() {
           <div className="relative h-[200px] w-full overflow-hidden rounded-[12px] px-[40px] py-[32px]">
             <img
               src="/images/banner_image_2.png"
-              className="h-full-wfull absolute inset-0 object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
             <div className="text-on-surface-a-2 relative z-10 flex flex-col">
               <p className="text-pc-20sb-body">
