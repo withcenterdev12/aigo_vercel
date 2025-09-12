@@ -1,12 +1,11 @@
 import Button from "./common/Button";
 import { navigationBarItems } from "../utils/constants";
 import { useActiveSection } from "../hooks/useActiveSection";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const activeSection = useActiveSection();
   const navigate = useNavigate();
-  const location = useLocation();
 
   return (
     <header className="sticky top-0 z-50 mx-auto flex h-[46px] w-full flex-row items-center justify-center bg-white px-[16px] sm:h-[66px] sm:px-[60px]">
