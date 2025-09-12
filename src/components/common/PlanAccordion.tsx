@@ -108,7 +108,9 @@ export default function PlanAccordion({
       {/* Sections */}
       <div className="flex-1">
         {isExpanded && (
-          <div className="mt-[24px] space-y-3 p-[10px]">
+          <div
+            className={`${index === 1 ? "mt-[4px]" : "mt-[24px]"} space-y-3 p-[10px]`}
+          >
             {sections.map((section, sectionIndex) => (
               <div
                 key={sectionIndex}
