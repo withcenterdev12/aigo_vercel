@@ -30,15 +30,15 @@ export default function Section_2() {
         <div className="relative mt-[60px] hidden h-[800px] w-full overflow-hidden sm:block">
           <img
             src="/images/showcase_ipad.png"
-            className="absolute right-[7%] z-20 h-auto w-[620px]"
+            className="absolute right-[7%] z-20 h-auto w-[62%] max-w-[620px]"
           />
           <img
             src="/images/slant_ipad.png"
-            className="absolute top-[38.75%] left-[8.25%] z-10 h-auto w-[446.42px]"
+            className="absolute top-[38.75%] left-[8.25%] z-10 h-auto w-[45%] max-w-[446px]"
           />
           <img
             src="/images/shadow.png"
-            className="absolute top-[55%] left-[4.5%] z-0 h-auto w-[494.11px]"
+            className="absolute top-[55%] left-[4.5%] z-0 h-auto w-[50%] max-w-[494px]"
           />
           <p className="text-pc-16r-subtext text-on-surface-a-5 absolute bottom-[5%] left-1/2 -translate-x-1/2">
             *에이고는 라이트 모드와 다크 모드를 지원합니다.
