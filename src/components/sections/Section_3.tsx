@@ -2,18 +2,46 @@ import { useEffect, useState } from "react";
 
 export default function Section_3() {
   const [calendar, setCalendar] = useState("calendar_1");
+  const [currentCard, setCurrentCard] = useState("calendar"); // "calendar" or "circle"
 
   useEffect(() => {
     let currentIndex = 0;
     const calendars = ["calendar_1", "calendar_2", "calendar_3"];
+    let calendarCycles = 0;
+    let circleCycles = 0;
 
     const interval = setInterval(() => {
-      currentIndex = (currentIndex + 1) % calendars.length;
-      setCalendar(calendars[currentIndex]);
+      if (currentCard === "calendar") {
+        currentIndex = (currentIndex + 1) % calendars.length;
+        setCalendar(calendars[currentIndex]);
+        
+        // Count calendar cycles (each complete cycle through all 3 images)
+        if (currentIndex === 0) {
+          calendarCycles++;
+          if (calendarCycles >= 2) {
+            setCurrentCard("circle");
+            calendarCycles = 0;
+          }
+        }
+      }
     }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+    // Separate interval for tracking circle animation cycles
+    const circleInterval = setInterval(() => {
+      if (currentCard === "circle") {
+        circleCycles++;
+        if (circleCycles >= 3) {
+          setCurrentCard("calendar");
+          circleCycles = 0;
+        }
+      }
+    }, 1500); // Circle animation duration
+
+    return () => {
+      clearInterval(interval);
+      clearInterval(circleInterval);
+    };
+  }, [currentCard]);
 
   return (
     <section className="flex w-full flex-col items-center overflow-x-hidden px-[16px] py-[25px] sm:px-[120px] sm:py-[100px]">
@@ -72,27 +100,7 @@ export default function Section_3() {
               </div>
             </div>
           </div>
-          {/* Card 2 */}
-          {/* <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
-            <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
-              업무 효율 증가
-            </h3>
-            <p className="text-mobile-16sb-body mt-[12px] text-white">
-              고객 DB 확보 10배 +<br /> 평균 견적 발행수 3배 +<br /> 웹사이트
-              체류 시간 5배 +<br />
-              영업팀 문의 증가량 3배 +
-            </p>
-            <div className="mt-[34px] flex w-full justify-center">
-              <img
-                src={`/images/${calendar}.png`}
-                className="h-[146px] w-[220px]"
-              />
-            </div>
-            <p className="text-mobile-12r-tag mt-[10px] text-white">
-              *기존 단순 광고 (문의접수 대비)량
-            </p>
-          </div> */}
-          {/* */}
+          {/* Card 2 - Dynamic between Calendar and Circle */}
           <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#7A6DFF] to-[#6750FE] px-[26px] sm:w-[308px] sm:rounded-[20px]">
             <h3 className="text-mobile-24sb-title1 mt-[32px] text-white">
               업무 효율 증가
@@ -102,24 +110,36 @@ export default function Section_3() {
               체류 시간 5배 +<br />
               영업팀 문의 증가량 3배 +
             </p>
-            <div className="relative mt-[45px] flex h-full w-full justify-center">
-              <img
-                src={`/images/purple_circle.svg`}
-                className="absolute z-0 h-[140px] w-[140px]"
-              />
-              <img
-                src={`/images/dark_blue_circle.svg`}
-                className="animate-spin-counterclockwise absolute z-10 h-[140px] w-[140px]"
-              />
-              <img
-                src={`/images/circular_arrow.svg`}
-                className="absolute top-[-10%] right-[10%] z-10 h-[182px] w-[194.5px]"
-              />
-              <div className="absolute top-[17%] right-[36.5%] z-20 flex items-center text-[40px] font-bold text-white">
-                <span className="text-[48px]">3</span>
-                <span>분</span>
+            {currentCard === "calendar" ? (
+              <div className="mt-[34px] flex w-full flex-col items-center justify-center">
+                <img
+                  src={`/images/${calendar}.png`}
+                  className="h-[146px] w-[220px]"
+                />
+                <p className="text-mobile-12r-tag mt-[10px] text-white">
+                  *기존 단순 광고 (문의접수 대비)량
+                </p>
               </div>
-            </div>
+            ) : (
+              <div className="relative mt-[45px] flex h-full w-full justify-center">
+                <img
+                  src={`/images/purple_circle.svg`}
+                  className="absolute z-0 h-[140px] w-[140px]"
+                />
+                <img
+                  src={`/images/dark_blue_circle.svg`}
+                  className="animate-spin-counterclockwise absolute z-10 h-[140px] w-[140px]"
+                />
+                <img
+                  src={`/images/circular_arrow.svg`}
+                  className="absolute top-[-10%] right-[10%] z-10 h-[182px] w-[194.5px]"
+                />
+                <div className="absolute top-[17%] right-[36.5%] z-20 flex items-center text-[40px] font-bold text-white">
+                  <span className="text-[48px]">3</span>
+                  <span>분</span>
+                </div>
+              </div>
+            )}
           </div>
           {/* Card 3 */}
           <div className="flex h-[400px] w-full flex-col rounded-[8px] bg-gradient-to-b from-[#6F86FF] to-[#A8B7FF] px-[26px] sm:w-[308px] sm:rounded-[20px]">
